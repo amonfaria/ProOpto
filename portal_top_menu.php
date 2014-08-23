@@ -11,7 +11,7 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container-fluid">
   <a href="#" class="navbar-brand"> ProOpto</a>
-  <button class= "navbar-toggle" data-toggle="collapse" data-target=".fullMenuTopColapse">
+  <button class= "navbar-toggle" data-toggle="collapse" data-target=".fullMenuTopCollapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
