@@ -172,11 +172,11 @@ a.pure-button-primary input[type=submit] {
     border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
+    max-width: 20%;
 }
 
 .home-menu .pure-menu-heading {
     color: white;
-    max-width: 20%;
     font-weight: 200;
     font-size: 100%;
 }
