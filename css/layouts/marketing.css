@@ -492,6 +492,7 @@ img.resize{
 }
 
 div.portalMenu {
+    top:  300px;
     height: 300px;
     width: 80%;
     margin-left: auto;
