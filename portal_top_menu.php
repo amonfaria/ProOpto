@@ -11,7 +11,7 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container-fluid">
   <a href="#" class="navbar-brand"> ProOpto</a>
-  <button class= "navbar-toggle" data-toggle="collapse" data-target="full-top-menu">
+  <button class= "navbar-toggle" data-toggle="collapse" data-target=".fullMenuTop">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -20,7 +20,7 @@
   
 
   
-  <div class="collapse navbar-collapse" id="full-top-menu">
+  <div class="collapse navbar-collapse fullMenuTop" id="full-top-menu">
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
