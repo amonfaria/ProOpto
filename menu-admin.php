@@ -1,4 +1,4 @@
-<div class="portalMenu">
+<div class="portalMenu row hidden-xs">
     <div class="colLeft">
     <div class="pure-menu pure-menu-open">
         <a class="pure-menu-heading">Acesso</a>
