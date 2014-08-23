@@ -29,7 +29,9 @@
       <ul class="nav navbar-nav navbar-right">
       <div class="row">
          <div class="container-fluid">
-        <li class="dropdown">
+         <div class="clearfix visible-xs-block"></div>
+         
+        <li class="dropdown col-xs-6 col-sm-4">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           
           <ul class="dropdown-menu" role="menu">
