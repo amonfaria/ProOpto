@@ -27,8 +27,6 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-      <div class="row">
-      <div class="clearfix hidden-xs">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
@@ -41,19 +39,6 @@
           </ul>
         </li>
       </ul>
-      </div>
-      <div class="clearfix visible-xs-block">
-      
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href ="#">Action</a></li>
-          <li><a href ="#">Another action</a></li>
-          <li><a href ="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href ="#">Logout</a></li>
-          
-      </ul>
-      </div>
-      </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
