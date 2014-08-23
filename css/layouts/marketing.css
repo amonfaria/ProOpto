@@ -490,3 +490,25 @@ img.resize{
         font-size: 300%;
     }
 }
+
+div.portalMenu {
+    height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top: 4px solid #ff7300;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+}
+
+div.colLeft {
+    float: left;
+    width: 33%;
+}
+div.colRight {
+    float: left;
+    width: 67%;
+}

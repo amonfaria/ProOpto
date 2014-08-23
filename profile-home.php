@@ -39,15 +39,9 @@ error_reporting(E_ALL);
 GetMenu($fgmembersite->UserClass())
 ?>
 <!-- Form Code Start -->
-<div id='fg_membersite'class="splash-container-profile">
-<div class="splash">
-
-test
-</CENTER>
-
-</fieldset>
-</form>
-</div>
+<div class="portalMenu">
+    <div class="colLeft">one</div>
+    <div class="colRight">two</div>
 </div>
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
