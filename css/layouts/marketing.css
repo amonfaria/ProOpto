@@ -166,7 +166,7 @@ a.pure-button-primary input[type=submit] {
 }
 .home-menu.pure-menu-open {
     background: #2d3e50;
-    max-width: 20%;
+
 }
 .pure-menu.pure-menu-open.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
