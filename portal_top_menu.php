@@ -3,7 +3,7 @@
 <nav class="navbar navbar-static-top" role="navigation">
   <div class="container">
   <a href="#" class="navbar-brand"> ProOpto</a>
-  <button class= "color-me-orange navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  <button class= "navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
