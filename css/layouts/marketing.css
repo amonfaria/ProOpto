@@ -56,11 +56,8 @@ font-size:70%;
 color: #FF0000;
 
 }
-
-.color-me-orange{
-	background-color:  #ff7300;
-	
-	
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ff7300;
 }
 
 a.blue:link {
