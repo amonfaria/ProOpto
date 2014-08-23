@@ -29,7 +29,7 @@
       <ul class="nav navbar-nav navbar-right">
       <div class="row">
          <div class="container-fluid">
-         <div class="clearfix visible-xs-block"></div>
+         <div class="clearfix hidden-xs-block"></div>
          
         <li class="dropdown col-md-8 ">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
