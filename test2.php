@@ -20,10 +20,7 @@ include_once('main-header.php');
       <ul class="nav navbar-nav navbar-right">
       <ul>
       <div class="row clearfix visible-xs-block">
-<div class="Mobile">
-  
-
-    
+<div class="Mobile">  
         <li><a href="#">Flickr</a></li>
         <li><a href="#">Messenger</a></li>
         <li><a href="#">Sports</a></li>
