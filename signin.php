@@ -1,4 +1,4 @@
-<?PHP
+<?php
 require_once("./include/membersite_config.php");
 
 if(isset($_POST['submitted']))
@@ -19,18 +19,10 @@ include_once('main-header.php');
 ?>
 
 <body>
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Pro Opto</a>
+<?php 
 
-        <ul>
-            <li class="pure-menu-selected"><a href="index.php">Home</a></li>
-            <li><a href="#">Tour</a></li>
-            <li><a href="signin.php">Sign In</a></li>
-            <li><a href="registrar.php">Registrar</a></li>
-        </ul>
-    </div>
-</div>
+include_once('main-menu.php');
+?>
 <!-- Form Code Start -->
 <div id='fg_membersite'class="splash-container">
 <div class="splash">
