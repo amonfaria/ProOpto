@@ -7,6 +7,7 @@
 <!--<![endif]-->
 
 <script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
