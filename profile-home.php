@@ -25,6 +25,8 @@ if(isset($_POST['client_search']))
    }
 }
 include_once('main-header.php');
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
 ?>
 <body>
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
