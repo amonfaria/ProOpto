@@ -1,47 +1,40 @@
-<head>
-<!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-<![endif]-->
-<!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/layouts/marketing.css">
-<!--<![endif]-->
-
-<script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-</head>
-
-<body>
-
-
- <body data-spy="scroll" data-target=".navbar-collapse">
- <div class="navbar navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-static-top" role="navigation">
   <div class="container">
-   <div class="navbar-header">
-     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-     <span class="sr-only">Toggle navigation</span>
-     </button>
-     <a class="navbar-brand" href="index.html"> <img src="#"></a>
-   </div>
- <div class="navbar-collapse collapse">
-   <ul class="nav navbar-nav navbar-right">
-    <li class="active"><a href="#home">Home</a></li>
-    <li><a href="#one">One</a></li>
-    <li><a href="#two">Two</a></li>
-    <li><a href="#three">Three</a></li>
-    <li><a href="#four">Four</a></li>
-   </ul>
-  </div>
- </div>
-</div>
+  <a href="#" class="navbar-brand"> ProOpto</a>
+  <button class= "navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      
+  </button>
+  
+
+  
+  <div class="collapse navbar-collapse fullMenuTopCollapse">
+
+      <ul class="nav navbar-nav navbar-right">
+      <ul class="row">
+          <div class="clearfix visible-xs-block">
+          <li><a class="col-xs-6 col-sm-4" href="#">Action</a></li>
+          </div>
+      </ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
