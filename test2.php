@@ -19,7 +19,11 @@ include_once('main-header.php');
 
       <ul class="nav navbar-nav navbar-right">
       <ul>
-      <li> <a class="row clearfix visible-xs-block col-xs-6 col-sm-4"href="#">Action</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Action</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Action</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Action</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Action</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Action</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
