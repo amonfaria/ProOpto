@@ -20,7 +20,7 @@ include_once('main-header.php');
       <ul class="nav navbar-nav navbar-right">
       <ul>
       <div class="row clearfix visible-xs-block">
-<div class="pure-menu pure-menu-open">
+<div class="Mobile pure-menu pure-menu-open">
     <a class="pure-menu-heading">Acesso</a>
 
     <ul>
