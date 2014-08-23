@@ -9,6 +9,14 @@ include_once('main-header.php');
 include_once('main-menu.php');
 ?>
 
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Pro Opto</h1>
+        <p class="splash-subhead">
+
+    </div>
+</div>
+
 <div class="content-wrapper">
     <div class="content">
         <h2 class="content-head is-center">Leia Mais.</h2>
