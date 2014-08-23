@@ -496,9 +496,10 @@ div.portalMenu {
     float:  top;
     height: 300px;
     width: 90%;
-    margin-left: auto;
+    margin-left: 200px;
     margin-right: auto;
     margin-top: 100px;
+   
     margin-bottom: auto;
     border-top: 4px solid #ff7300;
     border-bottom-left-radius: 15px;
