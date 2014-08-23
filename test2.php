@@ -20,7 +20,7 @@ include_once('main-header.php');
       <ul class="nav navbar-nav navbar-right">
       <ul>
       <div class="row clearfix visible-xs-block">
-<div class="Mobile colLeft">
+<div class="Mobile">
   
 
     
