@@ -529,7 +529,7 @@ div.colLeft li a:hover,
 div.Mobile li a:hover,
 div.colLeft li a:focus {
     background: none;
-    border: gray;
+    border: none;
     color: #ff7300;
     text-decoration: none;
 }
