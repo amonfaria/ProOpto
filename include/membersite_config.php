@@ -1,4 +1,4 @@
-<?PHP
+<?php
 require_once("./include/fg_membersite.php");
 
 $fgmembersite = new FGMembersite();
