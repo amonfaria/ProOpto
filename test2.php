@@ -15,11 +15,11 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <ul class="row">
+      <div class="row">
           <div class="clearfix visible-xs-block">
           <li><a class="col-xs-6 col-sm-4" href="#">Action</a></li>
           </div>
-      </ul>
+      </div>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
