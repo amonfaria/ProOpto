@@ -615,7 +615,7 @@ class FGMembersite
         $_SESSION['user_first_login']=$row['first_login'];
         $_SESSION['user_company']=$row['company'];
         $_SESSION['company_name']=$row['company_name'];
-        $_SESSION['class_of_user']=$row['class'];
+        
         return true;
     } 
     function UpdateDBRecForConfirmation(&$user_rec)
