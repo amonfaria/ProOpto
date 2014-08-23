@@ -1,4 +1,6 @@
-
+<?php
+include_once('main-header.php');
+?>
 
 <nav class="navbar navbar-static-top" role="navigation">
   <div class="container">
