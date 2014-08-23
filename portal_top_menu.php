@@ -27,6 +27,7 @@
         <li><a href="#">OMG!</a></li>
    
       </div>
+      </div>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
