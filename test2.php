@@ -27,12 +27,14 @@
   <div class="clearfix visible-xs-block">
   <div class="col-xs-6 col-sm-4">hidden?</div>
 </div>
-</div>
+
 
       <ul class="nav navbar-nav navbar-right">
          <div class="container-fluid">
-        <li class="dropdown">
+        <div class="clearfix visible-xs-block">
+        <li class="dropdown col-xs-12 col-md-8">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
+          
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -40,9 +42,11 @@
             <li class="divider"></li>
             <li><a href="#">Logout</a></li>
           </ul>
+          </div>
         </li>
         </div>
       </ul>
+</div>
 
 
 <div class="row">
