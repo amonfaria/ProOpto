@@ -1,6 +1,4 @@
-<?php
-include_once('main-header.php');
-?>
+
 
 <nav class="navbar navbar-static-top" role="navigation">
   <div class="container">
@@ -17,16 +15,11 @@ include_once('main-header.php');
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <div class="row">
+      <ul class="row">
           <div class="clearfix visible-xs-block">
-          <div classlass="col-xs-6 col-sm-4">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          
+          <li><a class="col-xs-6 col-sm-4" href="#">Action</a></li>
           </div>
-          </div>
-      </div>
+      </ul>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
