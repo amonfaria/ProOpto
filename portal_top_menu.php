@@ -42,9 +42,9 @@
         </li>
       </ul>
       </div>
-      <div class="clearfix visible-xs-block">
+
       
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" "clearfix visible-xs-block">
           <li><a href ="#">Action</a></li>
           <li><a href ="#">Another action</a></li>
           <li><a href ="#">Something else here</a></li>
@@ -54,7 +54,7 @@
       </ul>
       </div>
       </div>
-      </div>
+      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
