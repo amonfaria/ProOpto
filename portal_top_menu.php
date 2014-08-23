@@ -47,7 +47,7 @@
 <script>
 $(document).ready(function () {
 $(".navbar-nav li a").click(function(event) {
-$(".navbar-toggle").collapse('hide');
+$(".navbar-collapse").collapse('hide');
 });
 });
 </script>
