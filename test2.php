@@ -44,7 +44,7 @@
           </div>
           <div class="clearfix visible-xs-block">
            
-          <li class="dropdown">
+          <li class="dropdown is-center">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
             
             <ul class="dropdown-menu" role="menu">
