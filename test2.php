@@ -14,6 +14,33 @@
 <div id="productsandservices" class="yui3-menu yui3-menu-horizontal"><!-- Bounding box -->
     <div class="yui3-menu-content"><!-- Content box -->
         <ul>
+        <div id="demo-horizontal-menu">
+            <ul id="std-menu-items">
+                <li class="pure-menu-selected"><a href="#">Flickr</a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Finance</a></li>
+                <li>
+                    <a href="#">Other</a>
+                    <ul>
+                        <li class="pure-menu-heading">More from Yahoo!</li>
+                        <li class="pure-menu-separator"></li>
+                        <li><a href="#">Autos</a></li>
+                        <li><a href="#">Flickr</a></li>
+                        <li><a href="#">Answers</a></li>
+                        <li>
+                            <a href="#">Even More</a>
+                            <ul>
+                                <li><a href="#">Horoscopes</a></li>
+                                <li><a href="#">Games</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">OMG</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
             <!-- Menu items -->
         </ul>
     </div>
