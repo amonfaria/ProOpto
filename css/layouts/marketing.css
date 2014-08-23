@@ -518,6 +518,7 @@ div.colLeft li a:focus {
     background: none;
     border: none;
     color: #ff7300;
+    text-decoration: none;
 }
 div.colRight {
     float: left;
