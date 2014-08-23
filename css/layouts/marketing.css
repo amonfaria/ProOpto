@@ -528,8 +528,8 @@ div.colLeft {
 div.colLeft li a:hover,
 div.Mobile li a:hover,
 div.colLeft li a:focus {
-    background: gray;
-    border: none;
+    background: none;
+    border: gray;
     color: #ff7300;
     text-decoration: none;
 }
