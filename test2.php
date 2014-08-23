@@ -17,7 +17,12 @@
       <ul class="nav navbar-nav navbar-right">
       <div class="row">
           <div class="clearfix visible-xs-block">
-          <li><a class="col-xs-6 col-sm-4" href="#">Action</a></li>
+          <div classlass="col-xs-6 col-sm-4">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          
+          </div>
           </div>
       </div>
         <li class="dropdown">
