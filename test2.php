@@ -21,9 +21,9 @@ include_once('main-header.php');
       <ul>
       <div class="row clearfix visible-xs-block">
 <div class="Mobile colLeft">
-    <a class="pure-menu-heading">Acesso</a>
+  
 
-    <ul>
+    
         <li><a href="#">Flickr</a></li>
         <li><a href="#">Messenger</a></li>
         <li><a href="#">Sports</a></li>
@@ -32,7 +32,7 @@ include_once('main-header.php');
         <li><a href="#">Games</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">OMG!</a></li>
-    </ul>
+   
 </div>
 </div>
         <li class="dropdown">
