@@ -13,6 +13,7 @@
 
 <div id="productsandservices" class="yui3-menu yui3-menu-horizontal"><!-- Bounding box -->
     <div class="yui3-menu-content"><!-- Content box -->
+        <a href="#">Other</a>
         <ul>
 
            <li><a href="#">Horoscopes</a></li>
