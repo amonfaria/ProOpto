@@ -15,6 +15,11 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
+      <li> <a class="row clearfix visible-xs-block "href="#">Action</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">flickr</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Messenger</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Sports</a></li>
+      <li> <a class="row clearfix visible-xs-block "href="#">Blah</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
