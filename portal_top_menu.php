@@ -9,7 +9,7 @@
 
 
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container-fluid">
+  <div class="container">
   <a href="#" class="navbar-brand"> ProOpto</a>
   <button class= "navbar-toggle" data-toggle="collapse" data-target=".fullMenuTopCollapse">
       <span class="icon-bar"></span>
@@ -44,11 +44,5 @@
 </nav>
 
 
-<script>
-$(document).ready(function () {
-$(".navbar-nav li a").click(function(event) {
-$(".navbar-collapse").collapse('hide');
-});
-});
-</script>
+
 
