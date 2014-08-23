@@ -31,7 +31,7 @@
 
       <ul class="nav navbar-nav navbar-right">
          <div class="container-fluid">
-        <div class="clearfix visible-xs-block">
+        <div class="clearfix visible-sm-block">
         <li class="dropdown col-xs-12 col-md-8">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           
