@@ -40,7 +40,7 @@ GetMenu($fgmembersite->UserClass())
 <div id='fg_membersite'class="splash-container-profile">
 <div class="splash">
 
-
+test
 </CENTER>
 
 </fieldset>
