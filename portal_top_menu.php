@@ -1,16 +1,6 @@
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Pro Opto</a>
+
 <ul class="nav navbar-nav navbar-right">
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
@@ -23,5 +13,4 @@
     </ul>
   </li>
 </ul>
-</div>
-</div>
+
