@@ -1,13 +1,21 @@
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Pro Opto</a>
-
+<div class="portalMenu">
+    <div class="colLeft">
+    <div class="pure-menu pure-menu-open">
+        <a class="pure-menu-heading">Acesso</a>
+    
         <ul>
-            <li class="pure-menu-selected"><a href="#">Home</a></li>
-            <li><a href="#">Portal de Acesso</a></li>
-            <li><a href="#">Administração</a></li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a href="#">Flickr</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Finance</a></li>
+            <li class="pure-menu-heading">Administrar</li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">OMG!</a></li>
         </ul>
     </div>
+    
+    </div>
+    <div class="colRight">two</div>
 </div>
 

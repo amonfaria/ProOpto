@@ -36,29 +36,11 @@ error_reporting(E_ALL);
 
 
 <?php
+include_once('portal_top_menu.php')
 GetMenu($fgmembersite->UserClass())
 ?>
 <!-- Form Code Start -->
-<div class="portalMenu">
-    <div class="colLeft">
-    <div class="pure-menu pure-menu-open">
-        <a class="pure-menu-heading">Acesso</a>
-    
-        <ul>
-            <li><a href="#">Flickr</a></li>
-            <li><a href="#">Messenger</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Finance</a></li>
-            <li class="pure-menu-heading">Administrar</li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">OMG!</a></li>
-        </ul>
-    </div>
-    
-    </div>
-    <div class="colRight">two</div>
-</div>
+
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
 
