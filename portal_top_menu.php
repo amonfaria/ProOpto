@@ -15,12 +15,6 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <div class="row clearfix visible-xs-block"> 
-        <li><a href="#">Flickr</a></li>
-        <li><a href="#">Messenger</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Finance</a></li>
-      </div>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
