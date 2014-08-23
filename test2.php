@@ -31,7 +31,7 @@
          <div class="container-fluid">
          <div class="clearfix hidden-xs-block">
          
-        <li class="dropdown col-md-8 ">
+        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           
           <ul class="dropdown-menu" role="menu">
