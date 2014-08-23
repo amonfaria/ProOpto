@@ -24,9 +24,7 @@
 
 <body>
 <div class="row">
-  <div class="clearfix visible-xs-block">
-  <div class="col-xs-6 col-sm-4">hidden?</div>
-</div>
+
 
 
       <ul class="nav navbar-nav navbar-right">
