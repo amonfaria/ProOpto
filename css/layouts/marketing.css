@@ -176,6 +176,7 @@ a.pure-button-primary input[type=submit] {
 
 .home-menu .pure-menu-heading {
     color: white;
+    max-width: 20%;
     font-weight: 200;
     font-size: 100%;
 }
