@@ -1,5 +1,10 @@
 <head>
-<link href="/css/layouts/marketing.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/marketing.css">
+<!--<![endif]-->
 </head>
 
 <body>
