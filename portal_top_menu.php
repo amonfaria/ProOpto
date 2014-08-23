@@ -7,7 +7,7 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-
+<body data-spy="scroll" data-target=".navbar-collapse">
 <nav class="navbar navbar-static-top" role="navigation">
   <div class="container">
   <a href="#" class="navbar-brand"> ProOpto</a>
