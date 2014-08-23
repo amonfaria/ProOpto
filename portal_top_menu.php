@@ -2,7 +2,7 @@
 <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="">Pro Opto</a>
-
+<div class="yui3-skin-sam">
 <div id="demo-horizontal-menu">
     <ul id="std-menu-items">
         <li class="pure-menu-selected"><a href="#">Flickr</a></li>
@@ -29,6 +29,7 @@
             </ul>
         </li>
     </ul>
+</div>
 </div>
     </div>
 </div>
