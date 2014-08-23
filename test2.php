@@ -25,11 +25,9 @@
 <body>
 
 
-
-
+<div class="row">
       <ul class="nav navbar-nav navbar-right">
          <div class="container-fluid">
-        <div class="clearfix hidden-xs-block">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           
@@ -44,7 +42,7 @@
         </li>
         </div>
       </ul>
-
+</div>
 
 
 <div class="row">
