@@ -38,6 +38,10 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
+<script>
+     $('.navbar-collapse a').click(function (e) {
+       $('.navbar-collapse').collapse('toggle');
+     });
+</script>
 
 
