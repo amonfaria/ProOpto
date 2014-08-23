@@ -512,6 +512,13 @@ div.colLeft {
     width: 20%;
     min-width:150px;
 }
+
+div.colLeft li a:hover,
+div.colLeft li a:focus {
+    background: none;
+    border: none;
+    color: #ff7300;
+}
 div.colRight {
     float: left;
     width: 67%;
