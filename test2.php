@@ -12,7 +12,7 @@
 
 <body>
 
-<div id='cssmenu'>
+<div class="nav" id='cssmenu'>
 <ul>
    <li class='active'><a href='index.html'><span>Home</span></a></li>
    <li class='has-sub'><a href='#'><span>Products</span></a>
