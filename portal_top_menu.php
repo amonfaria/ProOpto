@@ -11,7 +11,7 @@
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container-fluid">
   <a href="#" class="navbar-brand"> ProOpto</a>
-  <button class= "navbar-toggle" data-toggle="collapse" data-target=".fullMenuTopCollapse">
+  <button class= "navbar-toggle" data-toggle="collapse" data-target=".fullMenuTopColapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -21,14 +21,14 @@
 
   
   <div class="collapse navbar-collapse fullMenuTopCollapse" id="full-top-menu">
-      <form class="navbar-form navbar-center" role="search">
+      <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
-     
-    
+      <div class="row">
+      <div class="clearfix hidden-xs">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
@@ -42,11 +42,18 @@
         </li>
       </ul>
       </div>
-
-     
-	  
-      </div>
+      <div class="clearfix visible-xs-block">
       
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href ="#">Action</a></li>
+          <li><a href ="#">Another action</a></li>
+          <li><a href ="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href ="#">Logout</a></li>
+          
+      </ul>
+      </div>
+      </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
