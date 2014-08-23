@@ -1,5 +1,6 @@
 <?php
 require_once("./include/membersite_config.php");
+require_once("./include/find_my_menu.php");
 
 if(!$fgmembersite->CheckLogin())
 {
@@ -32,15 +33,9 @@ include_once('main-header.php');
     <script src="js/bootstrap.min.js"></script>
 
 
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a href="#" class="pure-menu-heading">ProOpto - Clinica</a>
-    <ul>
-        <li><a class="pure-menu-disabled" href="#">Calendario</a></li>
-        <li><a class="pure-menu-disabled" href="#">Dotores</a></li>
-        </ul>
-</div>
-</div>
+<?php
+GetMenu($fgmembersite->UserClass())
+?>
 <!-- Form Code Start -->
 <div id='fg_membersite'class="splash-container-profile">
 <div class="splash">

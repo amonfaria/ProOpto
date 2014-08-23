@@ -10,10 +10,4 @@
         </ul>
     </div>
 </div>
-<div class="splash-container">
-    <div class="splash">
-        <h1 class="splash-head">Pro Opto</h1>
-        <p class="splash-subhead">
-       
-    </div>
-</div>
+

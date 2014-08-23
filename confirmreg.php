@@ -1,6 +1,6 @@
 <?PHP
 require_once("./include/membersite_config.php");
-
+require_once("./include/find_my_header.php");
 if(isset($_GET['code']))
 {
    if($fgmembersite->ConfirmUser())

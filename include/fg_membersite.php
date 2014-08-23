@@ -342,6 +342,13 @@ class FGMembersite
         }
         return true;
     } 
+    function UserClass()
+    {
+    
+        return isset($_SESSION['class_of_user'])?$_SESSION['class_of_user']:'';
+    
+ 
+    }
     function LogOut()
     {
         session_start();
@@ -561,7 +568,7 @@ class FGMembersite
         }          
         $username = $this->SanitizeForSQL($username);
         $pwdmd5 = md5($password);
-        $qry = "Select name, email,company,first_login from $this->tablename where username='$username' and password='$pwdmd5' and confirmcode='y'";
+        $qry = "Select name, email,company,first_login,class from $this->tablename where username='$username' and password='$pwdmd5' and confirmcode='y'";
         
         $result = mysql_query($qry,$this->connection);
         
@@ -578,6 +585,7 @@ class FGMembersite
         $_SESSION['email_of_user'] = $row['email'];
         $_SESSION['user_first_login']=$row['first_login'];
         $_SESSION['user_company']=$row['company'];
+        $_SESSION['class_of_user']=$row['class'];
         return true;
     }
    
@@ -607,6 +615,7 @@ class FGMembersite
         $_SESSION['user_first_login']=$row['first_login'];
         $_SESSION['user_company']=$row['company'];
         $_SESSION['company_name']=$row['company_name'];
+        $_SESSION['class_of_user']=$row['class'];
         return true;
     } 
     function UpdateDBRecForConfirmation(&$user_rec)
