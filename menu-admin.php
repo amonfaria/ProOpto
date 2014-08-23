@@ -6,6 +6,7 @@
             <li class="pure-menu-selected"><a href="#">Home</a></li>
             <li><a href="#">Portal de Acesso</a></li>
             <li><a href="#">Administração</a></li>
+            <li><a href="logout.php">Logout</a></li>
         </ul>
     </div>
 </div>
