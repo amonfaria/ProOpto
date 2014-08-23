@@ -8,7 +8,7 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container-fluid">
   <a href="#" class="navbar-brand"> ProOpto</a>
   <button class= "navbar-toggle" data-toggle="collapse" data-target=".fullMenuTop">
