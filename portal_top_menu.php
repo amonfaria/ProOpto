@@ -15,7 +15,7 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <div class="visible-xs-block">
+      <div class="pure-menu visible-xs-block">
       <?php
       GetMenu($fgmembersite->UserClass())
       ?>
@@ -24,11 +24,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a class="is-center" href="#">Settings</a></li>
+            <li><a class="is-center" href="#">Another action</a></li>
+            <li><a class="is-center" href="#">Something else here</a></li>
             <li class="divider"></li>
-            <li><a href="logout.php">Logout</a></li>
+            <li><a class="is-center" href="logout.php">Logout</a></li>
           </ul>
         </li>
       </ul>
