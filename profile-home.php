@@ -42,6 +42,7 @@ require_once('portal_top_menu.php');
 <div class="portalMenu row hidden-xs">
     <div class="colLeft">
     <div class="pure-menu pure-menu-open">
+    <a class="pure-menu-heading"</a>
     <li><a href="#">Flickr</a></li>
     <li><a href="#">Messenger</a></li>
     <li><a href="#">Sports</a></li>
