@@ -43,7 +43,7 @@ require_once('portal_top_menu.php');
     <div class="colLeft">
     <div class="pure-menu pure-menu-open">
     <?php
-    GetMenu($fgmembersite->UserClass())
+        GetMenu($fgmembersite->UserClass());
     ?>
     </div>
     
