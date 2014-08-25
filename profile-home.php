@@ -52,13 +52,7 @@ include_once('portal_top_menu.php');
     
     </div>
     <div class="colRight">two</div>
-    <?php
-    if(isset($_POST['view_access']))
-    {
-        ViewAccess($fgmembersite->UserClass())
-    
-    }
-    ?>
+
 </div>
 </ul>
 <!-- Form Code Start -->
