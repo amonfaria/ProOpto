@@ -145,7 +145,7 @@ color: #1f8dd6;
 }
 a.pure-button-primary {
     background: white;
-    color: #1f8dd6;
+    color: black;
     border-radius: 30px;
     font-size: 120%;
 }
@@ -190,7 +190,7 @@ a.pure-button-primary input[type=submit] {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: black;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
