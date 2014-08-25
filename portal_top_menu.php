@@ -15,9 +15,8 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Settings</a></li>
+      <li><a class="pure-menu pure-menu-open" href="#">Settings</a></li>
       <li><a href="#">blah1</a></li>
-      <li><a href="#">blah2</a></li>
       <li><a href="#">blah3</a></li>
       <li><a href="#">Settings</a></li>
 
