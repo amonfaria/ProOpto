@@ -45,11 +45,11 @@ include_once('portal_top_menu.php');
     <div class="is-center pure-menu">
         <a class="pure-menu-heading">Acesso</a>
     
-        <ul>
+        
             <?php
             GetMenu($fgmembersite->UserClass())
             ?>
-        </ul>
+        
     </div>
     
     </div>
