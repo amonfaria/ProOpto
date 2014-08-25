@@ -14,12 +14,12 @@
   
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
-      <ul class="nav navbar-nav navbar-right">
-      <li><a class="menuOrangeBorder" href="#">Settings</a></li>
-      <li><a class="menuOrangeBorder" href="#">blah1</a></li>
-      <li><a class="menuOrangeBorder" href="#">blah2</a></li>
-      <li><a class="menuOrangeBorder" href="#">blah3</a></li>
-      <li><a class="menuOrangeBorder" href="#">Settings</a></li>
+      <ul class="menuOrangeBorder nav navbar-nav navbar-right">
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">blah1</a></li>
+      <li><a href="#">blah2</a></li>
+      <li><a href="#">blah3</a></li>
+      <li><a href="#">Settings</a></li>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
