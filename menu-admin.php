@@ -13,7 +13,7 @@
 
 <script language="javascript"> 
    function DoPost(){  
-      $("view_access").submit();  
+      $("#view_access").submit();  
    }
 
 </script>
