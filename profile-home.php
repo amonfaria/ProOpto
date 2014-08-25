@@ -46,6 +46,9 @@ include_once('portal_top_menu.php');
         <a class="pure-menu-heading">Acesso</a>
     
         <ul>
+            <?php
+            GetMenu($fgmembersite->UserClass())
+            ?>
             <li><a href="#">Flickr</a></li>
             <li><a href="#">Messenger</a></li>
             <li><a href="#">Sports</a></li>
