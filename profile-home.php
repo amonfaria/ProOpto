@@ -42,9 +42,17 @@ require_once('portal_top_menu.php');
 <div class="portalMenu row hidden-xs">
     <div class="colLeft">
     <div class="pure-menu pure-menu-open">
+    <li><a href="#">Flickr</a></li>
+    <li><a href="#">Messenger</a></li>
+    <li><a href="#">Sports</a></li>
+    <li><a href="#">Finance</a></li>
+    <li><a href="#">Games</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">OMG!</a></li>
     <?php
         GetMenu($fgmembersite->UserClass());
     ?>
+    one
     </div>
     
     </div>
