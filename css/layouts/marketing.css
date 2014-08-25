@@ -530,6 +530,7 @@ div.Mobile li a:hover{
     background: none;
     border: none;
     color: #ff7300;
+    text-decoration: none;
 
 }
 div.colRight {
