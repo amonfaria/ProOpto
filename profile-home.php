@@ -55,7 +55,7 @@ include_once('portal_top_menu.php');
 <?php
 if(isset($_POST['view_access']))
 {
-    echo "hello there"
+    echo "hello there";
 
 }
 ?>
