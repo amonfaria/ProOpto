@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-static-top" role="navigation">
+<nav class="noBackGround navbar navbar-static-top" role="navigation">
   <div class="container">
   <a href="#" class="navbar-brand"> Zyne</a>
   <button class= "navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,7 +16,7 @@
 
       <ul class="nav navbar-nav navbar-right">
       <li><a class="noBackGround pure-menu pure-menu-open" href="#">Settings</a></li>
-      <li><a href="#">blah1</a></li>
+      <li><a class="noBackGround pure-menu pure-menu-open" href="#">blah1</a></li>
       <li><a href="#">blah3</a></li>
       <li><a href="#">Settings</a></li>
 
