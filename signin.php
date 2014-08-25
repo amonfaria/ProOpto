@@ -32,7 +32,7 @@ include_once('main-menu.php');
 
 <div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
 <div class="pure-control-group">
-    <input type='email' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" placeholder="Usuario" required>
+    <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" placeholder="Usuario" required>
     <span id='login_username_errorloc' class='error'></span>
 </div>
 <div class="pure-control-group">
