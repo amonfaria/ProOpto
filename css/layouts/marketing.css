@@ -541,12 +541,11 @@ div.colRight {
 .navbar .nav > li > a {
     text-decoration: none;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    color:  white;
+    color:  #ff7300;
 }
 
 .MainNav{
-    color: black;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-    background: #ff7300;
+    background: black;
 }
 
