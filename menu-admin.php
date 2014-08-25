@@ -17,7 +17,7 @@
                $('#form').append($('<input/>', {
                     type: 'hidden',
                     name: 'view_access',
-                    value: '1'
+                    value: 'view_access'
                }));
 
                $('#form').submit();
