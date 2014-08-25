@@ -39,10 +39,10 @@ error_reporting(E_ALL);
 include_once('portal_top_menu.php');
 
 ?>
-
+<ul>
 <div class="portalMenu row hidden-xs">
     <div class="colLeft">
-    <div class="is-center pure-menu">
+    <div class="pure-menu">
         <a class="pure-menu-heading">Acesso</a>
     
         
@@ -55,6 +55,7 @@ include_once('portal_top_menu.php');
     </div>
     <div class="colRight">two</div>
 </div>
+</ul>
 <!-- Form Code Start -->
 
 <!-- client-side Form Validations:
