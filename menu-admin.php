@@ -11,7 +11,7 @@
 
 <script language="javascript"> 
 function DoPost(){
-     $.post("profile-home.php", { name: "view_calendar", value: "view_calendar" } );  //Your values here..
+     $.post("profile-home.php", { name: "view_calendar", value: "view_calendar" id= "view_caendar"} );  //Your values here..
   }
 
 </script>
