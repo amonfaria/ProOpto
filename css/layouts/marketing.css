@@ -542,6 +542,6 @@ div.colRight {
     border: 1px;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 	border-style: solid;
-	border-color: #ff7300;
+	border-color: gray;
 }
 
