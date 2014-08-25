@@ -6,11 +6,8 @@
 
 
 <script language="javascript"> 
-
-
-   function DoPostViewAccess(){
-     
-      $.post("profile-home.php", { name: "view_access", value: "view_access" } );  //Your values here..
+   function DoPostViewAccess(){  
+      $.post("profile-home.php", { name:"view_access", value: "view_access" } );  
    }
 
 </script>
