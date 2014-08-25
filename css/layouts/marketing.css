@@ -539,6 +539,7 @@ div.colRight {
 }
 
 .MainNav{
+    color: black;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
     background: #ff7300;
 }
