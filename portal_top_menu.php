@@ -15,7 +15,7 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <div class="Mobile visible-xs-block">
+      <div class="visible-xs-block">
       <?php
       GetMenu($fgmembersite->UserClass())
       ?>
