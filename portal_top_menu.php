@@ -23,6 +23,8 @@
       <li><a href="#">blah1</a></li>
       <li><a href="#">blah3</a></li>
       <li><a href="#">Settings</a></li>
+      <li><a href="#">blah1</a></li>
+      <li><a href="#">blah3</a></li>
       
 
         <li class="dropdown">
