@@ -1,6 +1,6 @@
 
     
-            <li><a class="row visible-xs-block" href="#">Flickr</a></li>
+            <li><a href="#">Flickr</a></li>
             <li><a href="#">Messenger</a></li>
             <li><a href="#">Sports</a></li>
             <li><a href="#">Finance</a></li>
