@@ -540,9 +540,14 @@ div.colRight {
 
 .navbar .nav > li > a {
     text-decoration: none;
-    color:  #ff7300;
+    color:  gray;
     font-size: 100%;
     text-align:  center;
+}
+
+.navbar .nav > li > a:hover {
+    text-decoration: none;
+    color:  #ff7300;
 }
 
 
