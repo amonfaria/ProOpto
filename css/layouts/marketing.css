@@ -544,7 +544,7 @@ div.colRight {
     font-size: 100%;
     text-align:  center;
 }
-.navbar .navbar-nav .navbar-right {
+.navbar .navbar-nav .navbar-right > li > a:hover {
     background: white!important;
 	background-color:  white!important;
 }
