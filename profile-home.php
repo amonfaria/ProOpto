@@ -36,34 +36,9 @@ error_reporting(E_ALL);
 
 
 <?php
-require_once('portal_top_menu.php');
+include_once('portal_top_menu.php');
+GetMenu($fgmembersite->UserClass())
 ?>
-
-<div class="portalMenu row hidden-xs">
-    <div class="colLeft">
-    <div class="pure-menu pure-menu-open">
-    <a class="pure-menu-heading"</a>
-    <li><a href="#">Flickr</a></li>
-    <li><a href="#">Messenger</a></li>
-    <li><a href="#">Sports</a></li>
-    <li><a href="#">Finance</a></li>
-    <li><a href="#">Games</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">OMG!</a></li>
-    <?php
-        GetMenu($fgmembersite->UserClass());
-    ?>
-    one
-    </div>
-    
-    </div>
-    <div class="colRight">two</div>
-
-    </div>
-
- 
-    
-    
 <!-- Form Code Start -->
 
 <!-- client-side Form Validations:
