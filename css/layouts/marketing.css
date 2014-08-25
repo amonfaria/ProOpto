@@ -544,9 +544,10 @@ div.colRight {
     font-size: 100%;
     text-align:  center;
 }
-.noBackGround{
-    background: none;
-	background-color:  none;
+.nav .navbar-nav .navbar-right{
+	background:  none;
+	border-bottom: 1px;
+	border-bottom-color: gray;
 }
 
 
