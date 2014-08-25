@@ -1,5 +1,5 @@
 
-<li><a id="view_access" href="profile-home.php">Acesso</a></li>
+<li><a id="view_access" href="javascript:DoPostViewAccess()">Acesso</a></li>
 <li><a href="#">Calendario</a></li>
 <li><a href="#">Clinica</a></li>
 <li><a href="#">Finance</a></li>
