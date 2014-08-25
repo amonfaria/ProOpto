@@ -9,7 +9,7 @@
 
 
    function DoPostViewAccess(){
-      alert("I am an alert box!");
+     
       $.post("profile-home.php", { name: "view_access", value: "view_access" } );  //Your values here..
    }
 
