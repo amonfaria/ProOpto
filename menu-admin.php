@@ -16,7 +16,7 @@
       $("#view_access").submit();  
    }
    function DoCalPost(){  
-      $("#view_access").submit();  
+      $("#view_calendar").submit();  
    }
    function DoClinicPost(){  
       $("#view_access").submit();  
