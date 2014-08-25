@@ -59,6 +59,12 @@ if(isset($_POST['view_access']))
     echo "hello there";
 
 }
+
+if(isset($_POST['view_calendar']))
+{
+    echo "Viewing calendar";
+
+}
 ?>
 </div>
 </div>
