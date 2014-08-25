@@ -5,7 +5,7 @@
 </form>
 <form id="view_calendar" action="profile-home.php" method="post">
 <input type='hidden' name='view_calendar' id='view_calendar' value='view_calendar'/>
-<li><a href="javascript:DoPost()">Calendario</a></li>
+<li><a href="javascript:DodiffPost()">Calendario</a></li>
 </form>
 <li><a href="#">Clinica</a></li>
 <li><a href="#">Finance</a></li>
@@ -13,6 +13,9 @@
 
 <script language="javascript"> 
    function DoPost(){  
+      $("form").submit();  
+   },
+   function DodiffPost(){  
       $("form").submit();  
    }
 
