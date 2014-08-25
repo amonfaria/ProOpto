@@ -55,6 +55,7 @@ include_once('portal_top_menu.php');
 <?php
 if(isset($_POST['view_access']))
 {
+    require_once("./include/membersite_config.php");
     ViewAccess($fgmembersite->UserClass())
 
 }
