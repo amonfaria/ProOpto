@@ -545,6 +545,7 @@ div.colRight {
     text-align:  center;
 }
 .navbar .navbar-static-top {
+    background: white!important;
 	background-color:  white!important;
 }
 
