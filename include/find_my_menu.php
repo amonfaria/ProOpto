@@ -9,4 +9,18 @@ function GetMenu($userClass)
         }
 
    }
+   
+function ViewAccess($userClass)
+    {
+        if ($userClass=="admin"){
+            include('view_access.php');
+        }
+        else{
+            include('not_authorized.php');
+    }
+    
+
+    }
+
+
 ?>

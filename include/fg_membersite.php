@@ -349,6 +349,27 @@ class FGMembersite
     
  
     }
+    function ViewAccess()
+    {
+        if(!$this->DBLogin())
+                {
+                    $this->HandleError("Database login failed!");
+                    return false;
+                }
+                $company= $this->SanitizeForSQL($_session['user_company']);
+                $qry = "Select username,email,phone_number from member2 where company='$company'";
+        
+                $result = mysql_query($qry,$this->connection);
+        
+                if(!$result || mysql_num_rows($result) <= 0)
+                {
+                    return false;
+                }
+        
+                
+                return $result;
+    
+    }
     function LogOut()
     {
         session_start();

@@ -1,7 +1,15 @@
-<li><a href="#">Contas</a></li>
+<li><a href="javascript:DoPostViewAccess()">Acesso</a></li>
 <li><a href="#">Calendario</a></li>
 <li><a href="#">Clinica</a></li>
 <li><a href="#">Finance</a></li>
+
+<script language="javascript"> 
+
+   function DoPostViewAccess(){
+      $.post("profile-home.php", { name: "view_access" } );  //Your values here..
+   }
+
+</script>
 
 
  
