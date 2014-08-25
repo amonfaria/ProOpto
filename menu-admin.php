@@ -1,7 +1,5 @@
-<form action="profile-home.php" method="post">
-<li><a name="view_access">Acesso</a></li>
-<input type='hidden' name='client_search' id='client_search' value='1'/>
-</form>
+
+<li><a name="view_access" href="profile-home.php?view_access=1">Acesso</a></li>
 <li><a href="#">Calendario</a></li>
 <li><a href="#">Clinica</a></li>
 <li><a href="#">Finance</a></li>
