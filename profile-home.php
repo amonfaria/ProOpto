@@ -53,7 +53,7 @@ include_once('portal_top_menu.php');
     </div>
     <div class="colRight">two</div>
 <?php
- echo "php working";
+
 if(isset($_POST['view_access']))
 {
     echo "hello there";
