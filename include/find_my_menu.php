@@ -20,7 +20,7 @@ function ViewAccess($userClass)
     }
     
 
-    }
+   }
 
 
 ?>
