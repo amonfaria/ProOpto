@@ -531,6 +531,7 @@ div.Mobile li a:hover{
     border: none;
     color: #ff7300;
     text-decoration: none;
+    font-size: 100%;
 }
 div.colRight {
     float: left;

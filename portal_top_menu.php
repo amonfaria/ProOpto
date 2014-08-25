@@ -15,14 +15,14 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <div class="Mobile pure-menu visible-xs-block">
+      <div class="is-center Mobile pure-menu visible-xs-block">
       <?php
       GetMenu($fgmembersite->UserClass())
       ?>
       </div>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
+          <a href="#" class="Mobile dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a class="is-center" href="#">Settings</a></li>
             <li><a class="is-center" href="#">Another action</a></li>
