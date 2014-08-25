@@ -44,9 +44,8 @@
 <head>
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
     <title>Contact us</title>
-    <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
+
     <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
-    <link rel="STYLESHEET" type="text/css" href="style/pwdwidget.css" />
     <script src="scripts/pwdwidget.js" type="text/javascript"></script>      
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 <!--[if lte IE 8]>

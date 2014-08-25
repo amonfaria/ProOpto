@@ -6,7 +6,7 @@
 <script language="javascript"> 
 
    function DoPostViewAccess(){
-      $.post("profile-home.php", { name: "view_access" } );  //Your values here..
+      $.post("profile-home.php", { name: "view_access", value: "view_access" } );  //Your values here..
    }
 
 </script>

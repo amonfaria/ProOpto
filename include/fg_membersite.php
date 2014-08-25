@@ -349,7 +349,7 @@ class FGMembersite
     
  
     }
-    function ViewAccess()
+    function DisplayAccess()
     {
         if(!$this->DBLogin())
                 {
