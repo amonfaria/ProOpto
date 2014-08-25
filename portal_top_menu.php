@@ -1,6 +1,6 @@
 
 
-<nav class="navbar navbar-static-top" role="navigation">
+<nav class="MainNav navbar navbar-static-top" role="navigation">
   <div class="container">
   <a href="#" class="navbar-brand"> Zyne</a>
   <button class= "navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -14,7 +14,7 @@
   
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
-      <ul class="MainNav nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right">
       <li><a href="#">Settings</a></li>
       <li><a href="#">blah1</a></li>
       <li><a href="#">blah2</a></li>
