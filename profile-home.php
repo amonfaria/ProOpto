@@ -43,9 +43,7 @@ include_once('portal_top_menu.php');
 <div class="portalMenu row hidden-xs">
     <div class="colLeft">
     <div class="pure-menu">
-        <a class="pure-menu-heading">Acesso</a>
-    
-        
+     
             <?php
             GetMenu($fgmembersite->UserClass())
             ?>
