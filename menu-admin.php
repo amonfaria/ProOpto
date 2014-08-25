@@ -8,8 +8,8 @@
 <script language="javascript"> 
 
 
-   $('a#view_access').click(function DoPostViewAccess(){
-      $.post("profile-home.php", { name: "view_access", value: "view_access" } ))  //Your values here..
+   function DoPostViewAccess(){
+      $.post("profile-home.php", { name: "view_access", value: "view_access" } );  //Your values here..
    }
 
 </script>
