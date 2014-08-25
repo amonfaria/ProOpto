@@ -546,8 +546,8 @@ div.colRight {
 }
 .nav .navbar-nav .navbar-right{
 	background:  none;
-	border-bottom: 1px;
-	border-bottom-color: gray;
+	border: 1px;
+	border-color: gray;
 }
 
 
