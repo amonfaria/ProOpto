@@ -14,13 +14,13 @@
   
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
-      <ul class="nav navbar-nav navbar-right">
-      <div class="pure-menu pure-menu-open">
+      <ul class="nav navbar-nav navbar-right pure-menu pure-menu-open">
+
       <li><a href="#">Settings</a></li>
       <li><a href="#">blah1</a></li>
       <li><a href="#">blah3</a></li>
       <li><a href="#">Settings</a></li>
-      </div>
+
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
