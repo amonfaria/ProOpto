@@ -22,7 +22,7 @@
       </div>
 
         <li class="dropdown">
-          <a href="#" class="Mobile" data-toggle="dropdown">Nome <span class="caret"></span></a>
+          <a href="#" class="Mobile dropdown-toggle" data-toggle="dropdown">Nome <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Settings</a></li>
             <li><a href="#">Another action</a></li>
