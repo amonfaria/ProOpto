@@ -42,7 +42,7 @@ include_once('portal_top_menu.php');
 
 <div class="portalMenu row hidden-xs">
     <div class="colLeft">
-    <div class="Mobile is-center pure-menu">
+    <div class="is-center pure-menu">
         <a class="pure-menu-heading">Acesso</a>
     
         <ul>
