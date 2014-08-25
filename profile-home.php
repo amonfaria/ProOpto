@@ -51,7 +51,7 @@ include_once('portal_top_menu.php');
     </div>
     
     </div>
-    <div class="colRight">two</div>
+    <div class="colRight">two
 <?php
 
 if(isset($_POST['view_access']))
@@ -60,6 +60,7 @@ if(isset($_POST['view_access']))
 
 }
 ?>
+</div>
 </div>
 </ul>
 <!-- Form Code Start -->
