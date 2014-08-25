@@ -15,9 +15,7 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <?php
-          include_once("show-collapsed-menu.php")
-      ?>
+
       
 
         <li class="dropdown">
