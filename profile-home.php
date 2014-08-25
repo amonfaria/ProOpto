@@ -36,9 +36,25 @@ error_reporting(E_ALL);
 
 
 <?php
-include_once('portal_top_menu.php');
-GetMenu($fgmembersite->UserClass())
+require_once('portal_top_menu.php');
 ?>
+
+<div class="portalMenu row hidden-xs">
+    <div class="colLeft">
+    <div class="pure-menu pure-menu-open">
+    <?php
+    GetMenu($fgmembersite->UserClass())
+    ?>
+    </div>
+    
+    </div>
+    <div class="colRight">two</div>
+
+    </div>
+
+ 
+    
+    
 <!-- Form Code Start -->
 
 <!-- client-side Form Validations:

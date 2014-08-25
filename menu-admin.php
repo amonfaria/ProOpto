@@ -1,6 +1,4 @@
-<div class="portalMenu row hidden-xs">
-    <div class="colLeft">
-    <div class="pure-menu pure-menu-open">
+
         <a class="pure-menu-heading">Acesso</a>
     
         <ul>
@@ -12,9 +10,4 @@
             <li><a href="#">News</a></li>
             <li><a href="#">OMG!</a></li>
         </ul>
-    </div>
-    
-    </div>
-    <div class="colRight">two</div>
-</div>
 
