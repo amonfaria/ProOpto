@@ -15,7 +15,7 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Settings</a></li>
+      <li><a class="menuOrangeBorder" href="#">Settings</a></li>
       <li><a href="#">Another action</a></li>
       <li><a href="#">Something else here</a></li>
         <li class="dropdown">

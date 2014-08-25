@@ -538,3 +538,8 @@ div.colRight {
     width: 67%;
 }
 
+.menuOrangeBorder{
+	border-style: solid;
+	border-color: #ff7300;
+}
+
