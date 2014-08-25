@@ -13,7 +13,7 @@
 
 <script language="javascript"> 
    function DoPost(){  
-      $("form").submit();  
+      $.submit();  
    }
 
 </script>
