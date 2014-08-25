@@ -7,6 +7,7 @@
 
 <script language="javascript"> 
    function DoPostViewAccess(){  
+      alert("hi there");
       $.post("profile-home.php", { name:"view_access", value: "view_access" } );  
    }
 
