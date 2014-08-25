@@ -14,9 +14,6 @@
 <script language="javascript"> 
    function DoPost(){  
       $("form").submit();  
-   },
-   function DodiffPost(){  
-      $("form").submit();  
    }
 
 </script>
