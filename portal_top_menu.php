@@ -15,7 +15,9 @@
   <div class="collapse navbar-collapse fullMenuTopCollapse">
 
       <ul class="nav navbar-nav navbar-right">
-
+      <?php
+      GetMenu($fgmembersite->UserClass())
+      ?>
       
 
         <li class="dropdown">
