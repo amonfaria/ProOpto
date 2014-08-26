@@ -370,9 +370,11 @@ class FGMembersite
                 
                 if (mysqli_num_rows($results)) 
                 { 
+                    i=0;
                     while ($result = mysqli_fetch_assoc($results)) 
                     { 
-                        $accessInfo["$result[id]"] = $result; 
+                        $accessInfo[i] = $result; 
+                        i++;
                     } 
                 } 
                 mysqli_free_result($results); 
