@@ -51,12 +51,12 @@ include_once('portal_top_menu.php');
     </div>
     
     </div>
-    <div class="colRight">two
+    <div class="colRight">
 <?php
 
 if(isset($_POST['view_access']))
 {
-    echo "hello ";
+    
     include("view_access.php");
     
 
