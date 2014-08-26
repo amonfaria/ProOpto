@@ -373,7 +373,7 @@ class FGMembersite
                 
                     while ($result = mysqli_fetch_assoc($results)) 
                     { 
-                        $accessInfo["$result[id]"] = $result; 
+                        $accessInfo[] = $result; 
                     } 
                 } 
                 mysqli_free_result($results); 
