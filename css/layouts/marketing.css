@@ -56,6 +56,9 @@ font-size:70%;
 color: #FF0000;
 
 }
+.navbar .navbar-toggle .icon-bar {
+    background-color: #ff7300;
+}
 
 a.blue:link {
 color: #1f8dd6;
@@ -142,7 +145,7 @@ color: #1f8dd6;
 }
 a.pure-button-primary {
     background: white;
-    color: #1f8dd6;
+    color: black;
     border-radius: 30px;
     font-size: 120%;
 }
@@ -166,18 +169,20 @@ a.pure-button-primary input[type=submit] {
 }
 .home-menu.pure-menu-open {
     background: #2d3e50;
+
 }
 .pure-menu.pure-menu-open.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
     border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
+    
 }
 
 .home-menu .pure-menu-heading {
     color: white;
-    font-weight: 400;
-    font-size: 120%;
+    font-weight: 200;
+    font-size: 100%;
 }
 
 .home-menu .pure-menu-selected a {
@@ -185,7 +190,7 @@ a.pure-button-primary input[type=submit] {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: black;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
@@ -490,3 +495,60 @@ img.resize{
         font-size: 300%;
     }
 }
+div.Mobile{
+    font-size: 100%;
+	border-top: 4px solid #ff7300;
+	background-color: white;
+}
+div.portalMenu {
+    float:  top;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    font-size: 100%;
+    margin-bottom: auto;
+    border-top: 4px solid #ff7300;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: white;
+    
+}
+li {
+    list-style-type: none;
+}
+.noBorder{
+	border: none;
+}
+
+div.colLeft {
+    float: left;
+    width: 20%;
+    min-width:150px;
+}
+
+div.colLeft li a:hover,
+div.Mobile li a:hover{
+    color: #ff7300;
+    text-decoration: none;
+
+}
+div.colRight {
+    float: left;
+    width: 67%;
+}
+
+.navbar .nav > li > a {
+    text-decoration: none;
+    color:  #ff7300;
+    font-size: 100%;
+    text-align:  center;
+}
+.nav .navbar-nav .navbar-right{
+	background:  none;
+	border: 1px;
+	border-color: gray;
+}
+
+
+

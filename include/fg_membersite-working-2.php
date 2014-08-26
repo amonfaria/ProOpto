@@ -1,4 +1,4 @@
-<?PHP
+<?php
 /*
     Registration/Login script from HTML Form Guide
     V1.0

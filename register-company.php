@@ -18,56 +18,18 @@ if(isset($_POST['submitted']))
 }
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
+
+
+include_once('main-header.php');
+
+
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-    <title>Contact us</title>
-    <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
-    <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
-    <link rel="STYLESHEET" type="text/css" href="style/pwdwidget.css" />
-    <script src="scripts/pwdwidget.js" type="text/javascript"></script>      
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
-<!--[if lte IE 8]>
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
-  
-<![endif]-->
-<!--[if gt IE 8]><!-->
-  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
-  
-<!--<![endif]-->
 
-
-
-  
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/marketing.css">
-    <!--<![endif]-->
-  
-
-
-
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-
-</head>
 <body>
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-        <a href="#" class="pure-menu-heading">ProOpto - Clinica</a>
-    <ul>
-        <li><a class="pure-menu-disabled" href="#">Calendario</a></li>
-        <li><a class="pure-menu-disabled" href="#">Doutores</a></li>
-        <li><a class="pure-menu-disabled" href="#">Novo Paciente</a></li>
-        </ul>
-</div>
-</div>
+<?php 
+
+include_once('frozen-menu.php');
+?>
 <!-- Form Code Start -->
 
 <div id='fg_membersite'class="splash-container">

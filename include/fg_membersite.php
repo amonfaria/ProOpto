@@ -1,4 +1,4 @@
-<?PHP
+<?php
 /*
     Registration/Login script from HTML Form Guide
     V1.0
@@ -342,6 +342,34 @@ class FGMembersite
         }
         return true;
     } 
+    function UserClass()
+    {
+    
+        return isset($_SESSION['class_of_user'])?$_SESSION['class_of_user']:'';
+    
+ 
+    }
+    function DisplayAccess()
+    {
+        if(!$this->DBLogin())
+                {
+                    $this->HandleError("Database login failed!");
+                    return false;
+                }
+                $company= $this->SanitizeForSQL($_session['user_company']);
+                $qry = "Select username,email,phone_number from member2 where company='$company'";
+        
+                $result = mysql_query($qry,$this->connection);
+        
+                if(!$result || mysql_num_rows($result) <= 0)
+                {
+                    return false;
+                }
+        
+                
+                return $result;
+    
+    }
     function LogOut()
     {
         session_start();
@@ -561,7 +589,7 @@ class FGMembersite
         }          
         $username = $this->SanitizeForSQL($username);
         $pwdmd5 = md5($password);
-        $qry = "Select name, email,company,first_login from $this->tablename where username='$username' and password='$pwdmd5' and confirmcode='y'";
+        $qry = "Select name, email,company,first_login,class_of_user from $this->tablename where username='$username' and password='$pwdmd5' and confirmcode='y'";
         
         $result = mysql_query($qry,$this->connection);
         
@@ -578,6 +606,7 @@ class FGMembersite
         $_SESSION['email_of_user'] = $row['email'];
         $_SESSION['user_first_login']=$row['first_login'];
         $_SESSION['user_company']=$row['company'];
+        $_SESSION['class_of_user']=$row['class_of_user'];
         return true;
     }
    
@@ -607,6 +636,7 @@ class FGMembersite
         $_SESSION['user_first_login']=$row['first_login'];
         $_SESSION['user_company']=$row['company'];
         $_SESSION['company_name']=$row['company_name'];
+        $_SESSION['class_of_user']=$row['class_of_user'];
         return true;
     } 
     function UpdateDBRecForConfirmation(&$user_rec)
