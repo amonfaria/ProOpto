@@ -1,7 +1,7 @@
 <?php 
    
    
-  
+   $result=array();
    $result = $fgmembersite->DisplayAccess();
    foreach ($result as $row)  {
 
