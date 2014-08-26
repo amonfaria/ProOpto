@@ -962,7 +962,7 @@ class FGMembersite
         {
             return false;
         }
-        return mysqli_fetch_array($result);
+        return mysqli_fetch_all($result);
 
 
 
