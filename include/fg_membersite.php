@@ -359,14 +359,25 @@ class FGMembersite
                 $company= $this->SanitizeForSQL($_SESSION['user_company']);
                 $qry = "Select * from member2 where company='$company'";
         
-                $result = mysqli_query($this->connection,$qry);
+                $results = mysqli_query($this->connection,$qry);
                 
-                if(!$result || mysqli_num_rows($result) <= 0)
+                if(!$results || mysqli_num_rows($results) <= 0)
                 {
                     return false;
                 }
                 
-                return mysqli_fetch_all($result);
+                $accessInfo = array(); 
+                
+                if (mysql_num_rows($results)) 
+                { 
+                    while ($result = mysql_fetch_assoc($results)) 
+                    { 
+                        $accessInfo["$result[id]"] = $result; 
+                    } 
+                } 
+                mysql_free_result($results); 
+                
+                return $accessInfo; 
     
     }
     function LogOut()
