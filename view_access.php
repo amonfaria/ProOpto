@@ -1,12 +1,12 @@
 <?php 
    
    
-   $result = $fgmembersite->DisplayAccess()
+  
    
-   while($row = mysqli_fetch_array($result)) {
+   while($row = $fgmembersite->DisplayAccess()) {
 
-     echo $row['name'];
-     echo $row['email'];
+     echo "name" . $row['name'] . "h";
+     echo "email" . $row['email'] . "h";
    }
    
 
