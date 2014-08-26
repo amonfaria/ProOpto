@@ -192,7 +192,7 @@ class FGMembersite
         }
         $qry = "insert into companies (tax_id,company_name,street_address,city,zip,phone) values('$clinicID','$clinicName','$clinicStreet','$clinicCity','$clinicZip','$clinicPhone')";
 
-        mysql_query($qry,$this->connection);
+        mysqli_query($qry,$this->connection);
 
 
         $_SESSION['user_company']  = $clinicID;
@@ -359,14 +359,14 @@ class FGMembersite
                 $company= $this->SanitizeForSQL($_SESSION['user_company']);
                 $qry = "Select * from member2 where company='$company'";
         
-                $result = mysql_query($qry,$this->connection);
+                $result = mysqli_query($qry,$this->connection);
                 
-                if(!$result || mysql_num_rows($result) <= 0)
+                if(!$result || mysqli_num_rows($result) <= 0)
                 {
                     return false;
                 }
                 
-                
+                mysqli_free_result($result);
                 return $result;
     
     }
@@ -527,7 +527,7 @@ class FGMembersite
     
     function HandleDBError($err)
     {
-        $this->HandleError($err."\r\n mysqlerror:".mysql_error());
+        $this->HandleError($err."\r\n mysqlerror:".mysqli_error());
     }
     
     function GetFromAddress()
@@ -560,16 +560,17 @@ class FGMembersite
         $email= $this->SanitizeForSQL($_session['email_of_user']);
         $qry = "Select name, email,company,first_login from $this->tablename where email='$email' and first_login='y' and confirmcode='y'";
 
-        $result = mysql_query($qry,$this->connection);
+        $result = mysqli_query($qry,$this->connection);
 
-        if(!$result || mysql_num_rows($result) <= 0)
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             return false;
         }
 
-        $row = mysql_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
         if ($row['first_login']=='y')
-        {    
+        {   
+            mysqli_free_result($result); 
             return false;
         }
 
@@ -578,6 +579,7 @@ class FGMembersite
         $_SESSION['user_first_login']=$row['first_login'];
         $_SESSION['user_company']=$row['company'];
         $_SESSION['company_name']=$row['company_name'];
+        mysqli_free_result($result);
         return true;
     } 
     function CheckLoginInDB($username,$password)
@@ -591,15 +593,15 @@ class FGMembersite
         $pwdmd5 = md5($password);
         $qry = "Select name, email,company,first_login,class_of_user from $this->tablename where username='$username' and password='$pwdmd5' and confirmcode='y'";
         
-        $result = mysql_query($qry,$this->connection);
+        $result = mysqli_query($qry,$this->connection);
         
-        if(!$result || mysql_num_rows($result) <= 0)
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             $this->HandleError("Error logging in. The username or password does not match");
             return false;
         }
         
-        $row = mysql_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
         
         
         $_SESSION['name_of_user']  = $row['name'];
@@ -607,6 +609,7 @@ class FGMembersite
         $_SESSION['user_first_login']=$row['first_login'];
         $_SESSION['user_company']=$row['company'];
         $_SESSION['class_of_user']=$row['class_of_user'];
+        mysqli_free_result($result);
         return true;
     }
    
@@ -620,15 +623,15 @@ class FGMembersite
         $email = $this->SanitizeForSQL($_SESSION['email_of_user']);
         $qry = "Select * from $this->tablename where email='$email' and confirmcode='y'";
 
-        $result = mysql_query($qry,$this->connection);
+        $result = mysqli_query($qry,$this->connection);
 
-        if(!$result || mysql_num_rows($result) <= 0)
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             $this->HandleError("Error logging in. The username or password does not match");
             return false;
         }
 
-        $row = mysql_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
 
 
         $_SESSION['name_of_user']  = $row['name'];
@@ -637,6 +640,7 @@ class FGMembersite
         $_SESSION['user_company']=$row['company'];
         $_SESSION['company_name']=$row['company_name'];
         $_SESSION['class_of_user']=$row['class_of_user'];
+        mysqli_free_result($result);
         return true;
     } 
     function UpdateDBRecForConfirmation(&$user_rec)
@@ -648,23 +652,24 @@ class FGMembersite
         }   
         $confirmcode = $this->SanitizeForSQL($_GET['code']);
         
-        $result = mysql_query("Select name, email from $this->tablename where confirmcode='$confirmcode'",$this->connection);   
-        if(!$result || mysql_num_rows($result) <= 0)
+        $result = mysqli_query("Select name, email from $this->tablename where confirmcode='$confirmcode'",$this->connection);   
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             $this->HandleError("Wrong confirm code.");
             return false;
         }
-        $row = mysql_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
         $user_rec['name'] = $row['name'];
         $user_rec['email']= $row['email'];
         
         $qry = "Update $this->tablename Set confirmcode='y' Where  confirmcode='$confirmcode'";
         
-        if(!mysql_query( $qry ,$this->connection))
+        if(!mysqli_query( $qry ,$this->connection))
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$qry");
             return false;
-        }      
+        }
+        mysqli_free_result($result);
         return true;
     }
     
@@ -685,7 +690,7 @@ class FGMembersite
         
         $qry = "Update $this->tablename Set password='".md5($newpwd)."' Where  id_user=".$user_rec['id_user']."";
         
-        if(!mysql_query( $qry ,$this->connection))
+        if(!mysqli_query( $qry ,$this->connection))
         {
             $this->HandleDBError("Error updating the password \nquery:$qry");
             return false;
@@ -702,16 +707,16 @@ class FGMembersite
         }   
         $email = $this->SanitizeForSQL($email);
         
-        $result = mysql_query("Select * from $this->tablename where email='$email'",$this->connection);  
+        $result = mysqli_query("Select * from $this->tablename where email='$email'",$this->connection);  
 
-        if(!$result || mysql_num_rows($result) <= 0)
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             $this->HandleError("There is no user with email: $email");
             return false;
         }
-        $user_rec = mysql_fetch_assoc($result);
+        $user_rec = mysqli_fetch_assoc($result);
 
-        
+        mysqli_free_result($result);
         return true;
     }
     
@@ -918,20 +923,21 @@ class FGMembersite
         $_SESSION['user_company']  = $clinicID;
         $qry = "update member2 set company='$clinicID' where email='$email'";
 
-        mysql_query($qry,$this->connection);
+        mysqli_query($qry,$this->connection);
         $qry = "update member2 set first_login='n' where email='$email'";
 
-        mysql_query($qry,$this->connection);
+        mysqli_query($qry,$this->connection);
 
         $qry = "select tax_id from companies where tax_id='$clinicID'";
 
-        $result = mysql_query($qry,$this->connection);
+        $result = mysqli_query($qry,$this->connection);
 
 
-        if(!$result || mysql_num_rows($result) <= 0)
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             return false;
         }
+        mysqli_free_result($result);
         return true;
 
 
@@ -950,14 +956,14 @@ class FGMembersite
         $clientID = $this->SanitizeForSQL($_SESSION['client_id']);
         $qry = "select * from clients where id_client='$clientID'";
 
-        $result = mysql_query($qry,$this->connection);
+        $result = mysqli_query($qry,$this->connection);
 
 
-        if(!$result || mysql_num_rows($result) <= 0)
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             return false;
         }
-        return mysql_fetch_assoc($result);
+        return mysqli_fetch_assoc($result);
 
 
 
@@ -975,15 +981,16 @@ class FGMembersite
         $clinicID=$_SESSION['user_company'];
         $qry = "select * from clients where client_cpf='$clientID'";
 
-        $result = mysql_query($qry,$this->connection);
+        $result = mysqli_query($qry,$this->connection);
 
 
-        if(!$result || mysql_num_rows($result) <= 0)
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             return false;
         }
-        $row = mysql_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
         $_SESSION['client_id']=$row['id_client']; 
+        mysqli_free_result($result);
         return true;
 
 
@@ -1212,11 +1219,12 @@ class FGMembersite
     {
         $field_val = $this->SanitizeForSQL($formvars[$fieldname]);
         $qry = "select * from $this->tablename where $fieldname='".$field_val."'";
-        $result = mysql_query($qry,$this->connection);   
-        if($result && mysql_num_rows($result) > 0)
+        $result = mysqli_query($qry,$this->connection);   
+        if($result && mysqli_num_rows($result) > 0)
         {
             return false;
         }
+        mysqli_free_result($result);
         return true;
     }
     function IsClientFieldUnique($formvars,$fieldname,$tablename)
@@ -1224,29 +1232,30 @@ class FGMembersite
         $table_val=$this->SanitizeForSQL($tablename);
         $field_val = $this->SanitizeForSQL($formvars[$fieldname]);
         $qry = "select * from $table_val where $fieldname='".$field_val."'";
-        $result = mysql_query($qry,$this->connection);
-        if($result && mysql_num_rows($result) > 0)
+        $result = mysqli_query($qry,$this->connection);
+        if($result && mysqli_num_rows($result) > 0)
         {
             return false;
         }
+        mysqli_free_result($result);
         return true;
     } 
     function DBLogin()
     {
 
-        $this->connection = mysql_connect($this->db_host,$this->username,$this->pwd);
+        $this->connection = mysqli_connect($this->db_host,$this->username,$this->pwd);
 
         if(!$this->connection)
         {   
             $this->HandleDBError("Database Login failed! Please make sure that the DB login credentials provided are correct");
             return false;
         }
-        if(!mysql_select_db($this->database, $this->connection))
+        if(!mysqli_select_db($this->database, $this->connection))
         {
             $this->HandleDBError('Failed to select database: '.$this->database.' Please make sure that the database name provided is correct');
             return false;
         }
-        if(!mysql_query("SET NAMES 'UTF8'",$this->connection))
+        if(!mysqli_query("SET NAMES 'UTF8'",$this->connection))
         {
             $this->HandleDBError('Error setting utf8 encoding');
             return false;
@@ -1256,8 +1265,8 @@ class FGMembersite
     
     function Ensuretable()
     {
-        $result = mysql_query("SHOW COLUMNS FROM $this->tablename");   
-        if(!$result || mysql_num_rows($result) <= 0)
+        $result = mysqli_query("SHOW COLUMNS FROM $this->tablename");   
+        if(!$result || mysqli_num_rows($result) <= 0)
         {
             return $this->CreateTable();
         }
@@ -1277,7 +1286,7 @@ class FGMembersite
                 "PRIMARY KEY ( id_user )".
                 ")";
                 
-        if(!mysql_query($qry,$this->connection))
+        if(!mysqli_query($qry,$this->connection))
         {
             $this->HandleDBError("Error creating the table \nquery was\n $qry");
             return false;
@@ -1315,7 +1324,7 @@ class FGMembersite
                 "' . $this->SanitizeForSQL($formvars['client_gender']) . '",
                 "' . $this->SanitizeForSQL($formvars['client_ocupation']) . '"
                 )';
-        if(!mysql_query( $insert_query ,$this->connection))
+        if(!mysqli_query( $insert_query ,$this->connection))
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
@@ -1349,7 +1358,7 @@ class FGMembersite
                 "'.$first_login.'",
                 "' . $confirmcode . '"
                 )';      
-        if(!mysql_query( $insert_query ,$this->connection))
+        if(!mysqli_query( $insert_query ,$this->connection))
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
@@ -1364,9 +1373,9 @@ class FGMembersite
     }
     function SanitizeForSQL($str)
     {
-        if( function_exists( "mysql_real_escape_string" ) )
+        if( function_exists( "mysqli_real_escape_string" ) )
         {
-              $ret_str = mysql_real_escape_string( $str );
+              $ret_str = mysqli_real_escape_string( $str );
         }
         else
         {
