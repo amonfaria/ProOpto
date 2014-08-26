@@ -8,9 +8,9 @@
 
     <title>Home &ndash; ProOpto</title>
 
-<<<<<<< HEAD
+
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-=======
+
     
 
 
@@ -18,7 +18,7 @@
 
 
 
->>>>>>> 42d64176f08039ae304d0299abd158baedf0d428
+
 <!--[if lte IE 8]>
   
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
   
 <!--<![endif]-->
-<<<<<<< HEAD
+
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
     <![endif]-->
@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
 </head>
-=======
+
 
 
 
@@ -109,4 +109,4 @@
 
 </head>
 
->>>>>>> 42d64176f08039ae304d0299abd158baedf0d428
+

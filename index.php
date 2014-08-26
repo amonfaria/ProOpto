@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php }
 
 include_once('main-header.php');
@@ -19,11 +19,8 @@ include_once('main-header.php');
         </ul>
     </div>
 </div>
-=======
-<?php 
 
-include_once('main-header.php');
-?>
+
 <body>
 
 <?php 
@@ -31,7 +28,6 @@ include_once('main-header.php');
 include_once('main-menu.php');
 ?>
 
->>>>>>> 42d64176f08039ae304d0299abd158baedf0d428
 <div class="splash-container">
     <div class="splash">
         <h1 class="splash-head">Pro Opto</h1>
