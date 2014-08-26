@@ -356,7 +356,7 @@ class FGMembersite
                     $this->HandleError("Database login failed!");
                     return false;
                 }
-                $company= $this->SanitizeForSQL($_session['user_company']);
+                $company= $this->SanitizeForSQL($_SESSION['user_company']);
                 $qry = "Select username,email,phone_number from member2 where company='$company'";
         
                 $result = mysql_query($qry,$this->connection);
