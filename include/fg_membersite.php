@@ -357,7 +357,7 @@ class FGMembersite
                     return false;
                 }
                 $company= $this->SanitizeForSQL($_SESSION['user_company']);
-                $qry = "Select username,email,phone_number from member2 where company='$company'";
+                $qry = "Select * from member2 where company='$company'";
         
                 $result = mysql_query($qry,$this->connection);
                 
