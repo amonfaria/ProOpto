@@ -366,8 +366,7 @@ class FGMembersite
                     return false;
                 }
                 
-                mysqli_free_result($result);
-                return $result;
+                return mysqli_fetch_assoc($result);
     
     }
     function LogOut()

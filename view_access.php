@@ -1,5 +1,13 @@
 <?php 
-   $result=$fgmembersite->DisplayAccess();
-   echo $result;
+
+   
+   while($row = $fgmembersite->DisplayAccess()) {
+
+     echo "" . $row['name'] . "";
+     echo "" . $row['email'] . "";
+     echo "";
+   }
+   
+
    
 ?>
