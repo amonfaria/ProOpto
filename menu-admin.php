@@ -7,7 +7,10 @@
 <input type='hidden' name='view_calendar' id='view_calendar' value='view_calendar'/>
 <li><a href="javascript:DoCalPost()">Calendario</a></li>
 </form>
-<li><a href="#">Clinica</a></li>
+<form id="view_clinic" action="profile-home.php" method="post">
+<input type='hidden' name='view_calendar' id='view_calendar' value='view_calendar'/>
+<li><a href="javascript:DoClinicPost()">Clinica</a></li>
+</form>
 <li><a href="#">Finance</a></li>
 
 
@@ -19,7 +22,7 @@
       $("#view_calendar").submit();  
    }
    function DoClinicPost(){  
-      $("#view_access").submit();  
+      $("#view_clinic").submit();  
    }
    function DoFinancePost(){  
       $("#view_access").submit();  
