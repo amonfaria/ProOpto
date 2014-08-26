@@ -527,7 +527,7 @@ class FGMembersite
     
     function HandleDBError($err)
     {
-        $this->HandleError($err."\r\n mysqlerror:".mysqli_error());
+        $this->HandleError($err."\r\n mysqlerror:".mysqli_error($this->connection));
     }
     
     function GetFromAddress()
@@ -1250,7 +1250,7 @@ class FGMembersite
             $this->HandleDBError("Database Login failed! Please make sure that the DB login credentials provided are correct");
             return false;
         }
-        if(!mysqli_select_db($this->database, $this->connection))
+        if(!mysqli_select_db($this->connection,$this->database))
         {
             $this->HandleDBError('Failed to select database: '.$this->database.' Please make sure that the database name provided is correct');
             return false;
@@ -1375,7 +1375,7 @@ class FGMembersite
     {
         if( function_exists( "mysqli_real_escape_string" ) )
         {
-              $ret_str = mysqli_real_escape_string( $str );
+              $ret_str = mysqli_real_escape_string($this->connection,$str );
         }
         else
         {
