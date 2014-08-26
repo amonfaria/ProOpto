@@ -2,7 +2,7 @@
    
    
   
-   $result = $fgmembersite->DisplayAccess()
+   $result = $fgmembersite->DisplayAccess();
    foreach ($result as $row)  {
 
      echo "name" . $row['name'] . "h";
