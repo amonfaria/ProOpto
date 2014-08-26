@@ -366,7 +366,7 @@ class FGMembersite
                     return false;
                 }
                 
-                $result="passed";
+                $result=1;
                 return $result;
     
     }
