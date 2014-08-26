@@ -352,6 +352,7 @@ class FGMembersite
     function DisplayAccess()
     {
         if(!$this->DBLogin())
+                 echo"logged into db";
                 {
                     $this->HandleError("Database login failed!");
                     return false;
@@ -365,7 +366,7 @@ class FGMembersite
                 {
                     return false;
                 }
-        
+                
                 
                 return $result;
     
