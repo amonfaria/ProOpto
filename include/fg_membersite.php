@@ -368,14 +368,14 @@ class FGMembersite
                 
                 $accessInfo = array(); 
                 
-                if (mysql_num_rows($results)) 
+                if (mysqli_num_rows($results)) 
                 { 
-                    while ($result = mysql_fetch_assoc($results)) 
+                    while ($result = mysqli_fetch_assoc($results)) 
                     { 
                         $accessInfo["$result[id]"] = $result; 
                     } 
                 } 
-                mysql_free_result($results); 
+                mysqli_free_result($results); 
                 
                 return $accessInfo; 
     
