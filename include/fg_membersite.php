@@ -366,7 +366,7 @@ class FGMembersite
                     return false;
                 }
                 
-                return mysqli_fetch_assoc($result);
+                return mysqli_fetch_all($result);
     
     }
     function LogOut()
@@ -962,7 +962,7 @@ class FGMembersite
         {
             return false;
         }
-        return mysqli_fetch_all($result);
+        return mysqli_fetch_assoc($result);
 
 
 
