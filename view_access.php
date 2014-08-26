@@ -1,11 +1,13 @@
 <?php 
-
    
-   $row = $fgmembersite->DisplayAccess();
-
-     echo "name" . $row['name'] . "h";
-     echo "email" . $row['email'] . "h";
    
+   $result = $fgmembersite->DisplayAccess()
+   
+   while($row = $result) {
+
+     echo "" . $row['name'] . "";
+     echo "" . $row['email'] . "";
+   }
    
 
    
