@@ -192,7 +192,7 @@ class FGMembersite
         }
         $qry = "insert into companies (tax_id,company_name,street_address,city,zip,phone) values('$clinicID','$clinicName','$clinicStreet','$clinicCity','$clinicZip','$clinicPhone')";
 
-        mysqli_query($qry,$this->connection);
+        mysqli_query($this->connection,$qry);
 
 
         $_SESSION['user_company']  = $clinicID;
@@ -359,7 +359,7 @@ class FGMembersite
                 $company= $this->SanitizeForSQL($_SESSION['user_company']);
                 $qry = "Select * from member2 where company='$company'";
         
-                $result = mysqli_query($qry,$this->connection);
+                $result = mysqli_query($this->connection,$qry);
                 
                 if(!$result || mysqli_num_rows($result) <= 0)
                 {
@@ -560,7 +560,7 @@ class FGMembersite
         $email= $this->SanitizeForSQL($_session['email_of_user']);
         $qry = "Select name, email,company,first_login from $this->tablename where email='$email' and first_login='y' and confirmcode='y'";
 
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
 
         if(!$result || mysqli_num_rows($result) <= 0)
         {
@@ -593,7 +593,7 @@ class FGMembersite
         $pwdmd5 = md5($password);
         $qry = "Select name, email,company,first_login,class_of_user from $this->tablename where username='$username' and password='$pwdmd5' and confirmcode='y'";
         
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
         
         if(!$result || mysqli_num_rows($result) <= 0)
         {
@@ -623,7 +623,7 @@ class FGMembersite
         $email = $this->SanitizeForSQL($_SESSION['email_of_user']);
         $qry = "Select * from $this->tablename where email='$email' and confirmcode='y'";
 
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
 
         if(!$result || mysqli_num_rows($result) <= 0)
         {
@@ -652,7 +652,7 @@ class FGMembersite
         }   
         $confirmcode = $this->SanitizeForSQL($_GET['code']);
         
-        $result = mysqli_query("Select name, email from $this->tablename where confirmcode='$confirmcode'",$this->connection);   
+        $result = mysqli_query($this->connection,"Select name, email from $this->tablename where confirmcode='$confirmcode'");   
         if(!$result || mysqli_num_rows($result) <= 0)
         {
             $this->HandleError("Wrong confirm code.");
@@ -707,7 +707,7 @@ class FGMembersite
         }   
         $email = $this->SanitizeForSQL($email);
         
-        $result = mysqli_query("Select * from $this->tablename where email='$email'",$this->connection);  
+        $result = mysqli_query($this->connection,"Select * from $this->tablename where email='$email'");  
 
         if(!$result || mysqli_num_rows($result) <= 0)
         {
@@ -923,14 +923,14 @@ class FGMembersite
         $_SESSION['user_company']  = $clinicID;
         $qry = "update member2 set company='$clinicID' where email='$email'";
 
-        mysqli_query($qry,$this->connection);
+        mysqli_query($this->connection,$qry);
         $qry = "update member2 set first_login='n' where email='$email'";
 
-        mysqli_query($qry,$this->connection);
+        mysqli_query($this->connection,$qry);
 
         $qry = "select tax_id from companies where tax_id='$clinicID'";
 
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
 
 
         if(!$result || mysqli_num_rows($result) <= 0)
@@ -956,7 +956,7 @@ class FGMembersite
         $clientID = $this->SanitizeForSQL($_SESSION['client_id']);
         $qry = "select * from clients where id_client='$clientID'";
 
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
 
 
         if(!$result || mysqli_num_rows($result) <= 0)
@@ -981,7 +981,7 @@ class FGMembersite
         $clinicID=$_SESSION['user_company'];
         $qry = "select * from clients where client_cpf='$clientID'";
 
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
 
 
         if(!$result || mysqli_num_rows($result) <= 0)
@@ -1219,7 +1219,7 @@ class FGMembersite
     {
         $field_val = $this->SanitizeForSQL($formvars[$fieldname]);
         $qry = "select * from $this->tablename where $fieldname='".$field_val."'";
-        $result = mysqli_query($qry,$this->connection);   
+        $result = mysqli_query($this->connection,$qry);   
         if($result && mysqli_num_rows($result) > 0)
         {
             return false;
@@ -1232,7 +1232,7 @@ class FGMembersite
         $table_val=$this->SanitizeForSQL($tablename);
         $field_val = $this->SanitizeForSQL($formvars[$fieldname]);
         $qry = "select * from $table_val where $fieldname='".$field_val."'";
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
         if($result && mysqli_num_rows($result) > 0)
         {
             return false;
@@ -1255,7 +1255,7 @@ class FGMembersite
             $this->HandleDBError('Failed to select database: '.$this->database.' Please make sure that the database name provided is correct');
             return false;
         }
-        if(!mysqli_query("SET NAMES 'UTF8'",$this->connection))
+        if(!mysqli_query($this->connection,"SET NAMES 'UTF8'"))
         {
             $this->HandleDBError('Error setting utf8 encoding');
             return false;
@@ -1265,7 +1265,7 @@ class FGMembersite
     
     function Ensuretable()
     {
-        $result = mysqli_query("SHOW COLUMNS FROM $this->tablename");   
+        $result = mysqli_query($this->connection,"SHOW COLUMNS FROM $this->tablename");   
         if(!$result || mysqli_num_rows($result) <= 0)
         {
             return $this->CreateTable();
@@ -1286,7 +1286,7 @@ class FGMembersite
                 "PRIMARY KEY ( id_user )".
                 ")";
                 
-        if(!mysqli_query($qry,$this->connection))
+        if(!mysqli_query($this->connection,$qry))
         {
             $this->HandleDBError("Error creating the table \nquery was\n $qry");
             return false;
@@ -1324,7 +1324,7 @@ class FGMembersite
                 "' . $this->SanitizeForSQL($formvars['client_gender']) . '",
                 "' . $this->SanitizeForSQL($formvars['client_ocupation']) . '"
                 )';
-        if(!mysqli_query( $insert_query ,$this->connection))
+        if(!mysqli_query($this->connection,$insert_query))
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
@@ -1358,7 +1358,7 @@ class FGMembersite
                 "'.$first_login.'",
                 "' . $confirmcode . '"
                 )';      
-        if(!mysqli_query( $insert_query ,$this->connection))
+        if(!mysqli_query($this->connection,$insert_query))
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
