@@ -352,7 +352,6 @@ class FGMembersite
     function DisplayAccess()
     {
         if(!$this->DBLogin())
-                 echo"logged into db";
                 {
                     $this->HandleError("Database login failed!");
                     return false;
@@ -361,13 +360,13 @@ class FGMembersite
                 $qry = "Select username,email,phone_number from member2 where company='$company'";
         
                 $result = mysql_query($qry,$this->connection);
-        
+                
                 if(!$result || mysql_num_rows($result) <= 0)
                 {
                     return false;
                 }
                 
-                
+                $result="passed";
                 return $result;
     
     }
