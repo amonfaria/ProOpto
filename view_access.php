@@ -3,6 +3,7 @@
             font-size: 85%;
             background-color: black;
             color: white;
+            text-align:left;
         }
 
 </style>
