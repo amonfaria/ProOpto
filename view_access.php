@@ -93,7 +93,7 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button type="button" class="button-small-cancel pure-button"> <i class="fa fa-check-square fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-cancel pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
         echo '<td><button type="button" class="button-small-cancel pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
         
         
