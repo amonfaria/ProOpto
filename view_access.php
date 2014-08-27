@@ -25,7 +25,7 @@
        font-size: 85%;
        background-color: white;
        
-       color: green;
+       color: gray;
 
        padding-right: 5px;
        padding-left: 5px;
@@ -106,7 +106,7 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
         echo '<td><button type="button" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-red pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-red pure-button"> <i class="fa fa-trash fa-lg fa-inverse"></i> </button> </td>';
         
         
         
