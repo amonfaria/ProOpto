@@ -52,7 +52,10 @@
              <i class="fa fa-trash fa-lg"></i>
              Cancelar
              </button>
-             <button type="submit" form="myform" class="button-small pure-button">Registrar</button>
+             <button type="submit" form="myform" class="button-small pure-button">
+             <i class="fa fa-check-square fa-lg"></i>
+             Registrar
+             </button>
            </div>
          </div>
        </div>
