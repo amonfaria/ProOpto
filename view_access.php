@@ -47,8 +47,10 @@
            </div>
            
            <div class="modal-footer">
-             <button type="button" class="button-small-cancel pure-button" data-dismiss="modal">Cancelar</button>
-             <input type="submit" form="myform" class="button-small pure-button"></input>
+             <button type="button" class="button-small-cancel pure-button" data-dismiss="modal">
+             <i class="fa fa-trash"></i>
+             Cancelar</button>
+             <button type="submit" form="myform" class="button-small pure-button">Registrar</button>
            </div>
          </div>
        </div>
