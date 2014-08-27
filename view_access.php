@@ -20,6 +20,21 @@
 
 
 }
+
+.button-small-red-inverse {
+
+       font-size: 85%;
+       background-color: white;
+	;
+       
+       color: rgb(202, 60, 60);
+
+       padding-right: 5px;
+       padding-left: 5px;
+
+
+}
+
 .button-small-white {
 
        font-size: 85%;
@@ -83,11 +98,11 @@
 <table class="pure-table pure-table-horizontal">
     <thead>
         <tr>
-            <th>Nome</th>
-            <th>Sobre Nome</th>
-            <th>Email</th>
-            <th>Editar</th>
-            <th>Remover</th>
+            <th>Usuarios Ativos</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
     </thead>
 
@@ -106,7 +121,7 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
         echo '<td><button type="button" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-red pure-button"> <i class="fa fa-trash fa-lg fa-inverse"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
         
         
         
