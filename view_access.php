@@ -133,4 +133,44 @@ if (count($result))
 ?>
  </tbody>
 </table>
+
+<table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>Esperando Confirmação</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+
+<?php
+
+ $result = $fgmembersite->DisplayAccess();
+if (count($result)) 
+{ 
+    foreach ($result AS $id => $data) 
+    { 
+        echo "<tr>";
+        echo "<td> $data[name] </td>";
+        echo "<td> $data[name] </td>";
+        echo "<td> $data[email] </td>";
+        echo '<td><button type="button" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        
+        
+        
+        echo "</tr>";
+    } 
+} 
+
+
+?>
+ </tbody>
+</table>
+
 </div>
