@@ -23,8 +23,16 @@
 }
 .button-small-green {
             font-size: 85%;
-            background-color: #00ff73;
+            background-color: green;
             color: white;
+     
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+.button-small-green-inverse {
+            font-size: 85%;
+            background-color: white;
+            color: green;
      
             padding-right: 5px;
             padding-left: 5px;
@@ -171,7 +179,7 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
         echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-times fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-green pure-button"> <i class="fa fa-check fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-green-inverse pure-button"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         
         
