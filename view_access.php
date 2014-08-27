@@ -8,7 +8,19 @@
             padding-left: 5px;
         }
 
+.button-small-cancel {
+
+       font-size: 85%;
+       background-color: red;
+       color: white;
+
+       padding-right: 5px;
+       padding-left: 5px;
+
+
+}
 </style>
+
 
 <div class="colRight">
 <div>
@@ -25,14 +37,16 @@
          <div class="modal-content">
            <div class="modal-header">
              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-             <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
+             <h4 class="modal-title" id="myModalLabel">Registrar Usuario Novo</h4>
            </div>
            <div class="modal-body">
-             <h3>Modal Body</h3>
+             <form id="myform" method="get" action="something.php">
+                 <input type="text" name="name" />
+             </form>
            </div>
            <div class="modal-footer">
-             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-             <button type="button" class="btn btn-primary">Save changes</button>
+             <button type="button" class="button-small-cancel pure-button" data-dismiss="modal">Cancelar</button>
+             <button type="button" form="myform" class="button-small pure-button">Registrar</button>
            </div>
          </div>
        </div>
