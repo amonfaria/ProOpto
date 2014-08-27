@@ -26,3 +26,19 @@
     
     </div>
 </div>
+
+
+
+<?php
+echo '<div class="colMid">';
+ $result = $fgmembersite->DisplayAccess();
+if (count($result)) 
+{ 
+    foreach ($result AS $id => $data) 
+    { 
+        echo "Sender: $data[name], Subject: $data[email]<br />\n"; 
+    } 
+} 
+echo '</div>';
+
+?>
