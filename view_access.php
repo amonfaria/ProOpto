@@ -3,7 +3,7 @@
             font-size: 85%;
             background-color: #008cd0;
             color: white;
-            text-align:left;
+     
             padding-right: 5px;
             padding-left: 5px;
         }
