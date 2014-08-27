@@ -42,6 +42,7 @@
            </div>
            <div class="modal-body">
              <form id="myform" method="get" action="something.php">
+                 ADD REGISTRATION FIELDS HERE
                  <input type="text" name="name" />
             
              </form>
@@ -66,18 +67,43 @@
     </div>
 </div>
 
+<div class="colMid">
+<table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Sobre Nome</th>
+            <th>Email</th>
+            <th>Editar</th>
+            <th>Remover</th>
+        </tr>
+    </thead>
 
+    <tbody>
+        
 
 <?php
-echo '<div class="colMid">';
+
  $result = $fgmembersite->DisplayAccess();
 if (count($result)) 
 { 
     foreach ($result AS $id => $data) 
     { 
-        echo "Sender: $data[name], Subject: $data[email]<br />\n"; 
+        echo "<tr>";
+        echo "<td> $data[name] </td>";
+        echo "<td> $data[name] </td>";
+        echo "<td> $data[email] </td>";
+        echo '<td><button type="button" class="button-small-cancel pure-button"> <i class="fa fa-check-square fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-cancel pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        
+        
+        
+        echo "</tr>";
     } 
 } 
-echo '</div>';
+
 
 ?>
+ </tbody>
+</table>
+</div>
