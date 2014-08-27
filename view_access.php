@@ -1,4 +1,4 @@
-<div class="blueButton colRight">
+<div class="pure-button colRight">
 <div>
     <div>
      <form id="view_access" action="profile-home.php" method="post">
