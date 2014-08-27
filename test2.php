@@ -1,10 +1,10 @@
 <?php
     include("main-header.php");
 ?>
+
+<body>
 HTML  CSS   Result
 Edit on 
-<div class="container">
-  <h2>Bootstrap 3.1.0 - Modal Demo</h2>
 
   <div class="row text-center">
       <h3>The Basic Modal</h3>
@@ -75,4 +75,5 @@ Edit on
       </div>
     </div>
   </div>
-</div>
+
+</body>
