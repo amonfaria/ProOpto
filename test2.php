@@ -27,8 +27,4 @@
 </div>
 
 
-<script language="javascript">
-$('#myModal').modal()                      // initialized with defaults
-$('#myModal').modal({ keyboard: true })   // initialized with no keyboard
-</script>
 </body>
