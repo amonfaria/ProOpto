@@ -48,7 +48,7 @@
            
            <div class="modal-footer">
              <button type="button" class="button-small-cancel pure-button" data-dismiss="modal">Cancelar</button>
-             <input type="submit" form="myform" class="button-small pure-button">Registrar</input>
+             <input type="submit" form="myform" class="button-small pure-button"></input>
            </div>
          </div>
        </div>
