@@ -11,7 +11,7 @@
 .button-small-cancel {
 
        font-size: 85%;
-       background-color: red;
+       background-color: #ff000d;
        color: white;
 
        padding-right: 5px;
