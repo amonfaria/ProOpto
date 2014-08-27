@@ -533,7 +533,11 @@ div.Mobile li a:hover{
     text-decoration: none;
 
 }
-div.colRight {
+div.colRight{
+	float: right;
+	width: 20%;
+}
+div.colMid {
     float: left;
     width: 67%;
 }

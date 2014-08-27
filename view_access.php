@@ -1,3 +1,4 @@
+<div class="colRight">
 <div class="portalMenu ">
     <div class="pure-menu">
      <form id="view_access" action="profile-home.php" method="post">
@@ -9,18 +10,3 @@
     
     </div>
 </div>
-<?php 
-   
-   
-
-   $result = $fgmembersite->DisplayAccess();
-if (count($result)) 
-{ 
-    foreach ($result AS $id => $data) 
-    { 
-        echo "Sender: $data[name], Subject: $data[email]<br />\n"; 
-    } 
-} 
-
-   
-?>
