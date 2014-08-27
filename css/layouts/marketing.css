@@ -535,11 +535,15 @@ div.Mobile li a:hover{
 }
 div.colRight{
 	float: right;
-	width: 20%;
+	width: 10%;
 }
 div.colMid {
     float: left;
     width: 67%;
+}
+.blueButton {
+	background: blue;
+	color: white;
 }
 
 .navbar .nav > li > a {
