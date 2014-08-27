@@ -42,9 +42,11 @@
            <div class="modal-body">
              <form id="myform" method="get" action="something.php">
                  <input type="text" name="name" />
-             </form>
+             
              <button type="button" form="myform" class="button-small pure-button">Registrar</button>
+             </form>
            </div>
+           
            <div class="modal-footer">
              <button type="button" class="button-small-cancel pure-button" data-dismiss="modal">Cancelar</button>
              <button type="button" form="myform" class="button-small pure-button">Registrar</button>
