@@ -1,9 +1,9 @@
 <div class="colRight">
-<div class="portalMenu ">
-    <div class="pure-menu">
+<div>
+    <div>
      <form id="view_access" action="profile-home.php" method="post">
      <input type='hidden' name='view_access' id='view_access' value='view_access'/>
-     <li><a id="view_access" href="javascript:DoViewPost()">Adicionar</a></li>
+     <li><a id="view_access" href="javascript:DoViewPost()">Novo Acesso</a></li>
      </form>
         
     </div>
