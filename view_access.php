@@ -7,6 +7,7 @@
             padding-right: 5px;
             padding-left: 5px;
         }
+  
 
 .button-small-red {
 
@@ -20,6 +21,14 @@
 
 
 }
+.button-small-green {
+            font-size: 85%;
+            background-color: #00ff73;
+            color: white;
+     
+            padding-right: 5px;
+            padding-left: 5px;
+        }
 
 .button-small-red-inverse {
 
@@ -161,8 +170,8 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button type="button" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-red pure-button"> <i class="fa fa-times fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-check-square fa-lg"></i> </button> </td>';
         
         
         
