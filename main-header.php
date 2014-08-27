@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="css/layouts/marketing.css">
     <!--<![endif]-->
  
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
