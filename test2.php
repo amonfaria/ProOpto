@@ -26,5 +26,9 @@
   </div>
 </div>
 
-
+<script language="javascript">
+$('#myModal').on('show.bs.modal', function (e) {
+  if (!data) return e.preventDefault() // stops modal from being shown
+})
+</script>
 </body>
