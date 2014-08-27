@@ -1,7 +1,7 @@
 <style scoped>
 .button-small {
             font-size: 85%;
-            background-color: #1f8dd6;
+            background-color: #aecfe5;
             color: white;
         }
 
