@@ -4,7 +4,7 @@
             background-color: #008cd0;
             color: white;
             text-align:left;
-            padding: 0;
+            padding: .5m;
         }
 
 </style>
