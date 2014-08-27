@@ -1,3 +1,7 @@
+<?php
+    include("main-header.php");
+?>
+<body>
 <!-- Button trigger modal -->
 <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Launch demo modal
@@ -28,3 +32,4 @@ $('#myModal').modal()                      // initialized with defaults
 $('#myModal').modal({ keyboard: false })   // initialized with no keyboard
 $('#myModal').modal('show')                // initializes and invokes show immediately
 </script>
+</body>
