@@ -17,7 +17,7 @@
      <input type='hidden' name='view_access' id='view_access' value='view_access'/>
      <button class="button-small pure-button">
      <i class="fa fa-plus-square"></i>
-     Novo Acesso
+     Novo
      
      </button>
      </form>
