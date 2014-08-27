@@ -171,7 +171,7 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
         echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-times fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-green pure-button"> <i class="fa fa-check-square fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-green pure-button"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         
         
