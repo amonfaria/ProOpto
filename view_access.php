@@ -13,11 +13,12 @@
 <div class="colRight">
 <div>
     <div>
-     <a href="#" class="button-small pure-button" data-toggle="modal" data-target="#basicModal">
+     <button href="#" class="button-small pure-button" data-toggle="modal" data-target="#basicModal">
      <i class="fa fa-plus-square fa-lg"></i>
      Novo
      
-     </a>
+     </button>
+     
      
      <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
        <div class="modal-dialog">
