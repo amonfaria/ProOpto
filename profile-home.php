@@ -58,6 +58,7 @@ if(isset($_POST['view_access']))
 {
     
     include("view_access.php");
+    
     echo '<div class="colMid">';
      $result = $fgmembersite->DisplayAccess();
     if (count($result)) 
