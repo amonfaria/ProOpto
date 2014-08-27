@@ -98,7 +98,8 @@
 <table class="pure-table pure-table-horizontal">
     <thead>
         <tr>
-            <th>Usuarios Ativos</th>
+            <label>Usuarios Ativos</label>
+            <th></th>
             <th></th>
             <th></th>
             <th></th>
@@ -137,7 +138,8 @@ if (count($result))
 <table class="pure-table pure-table-horizontal">
     <thead>
         <tr>
-            <th>Esperando Confirmação</th>
+            <label>Esperando Confirmação</label>
+            <th></th>
             <th></th>
             <th></th>
             <th></th>
