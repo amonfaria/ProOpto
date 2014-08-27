@@ -29,7 +29,6 @@
 
 <script language="javascript">
 $('#myModal').modal()                      // initialized with defaults
-$('#myModal').modal({ keyboard: false })   // initialized with no keyboard
-$('#myModal').modal('show')                // initializes and invokes show immediately
+$('#myModal').modal({ keyboard: true })   // initialized with no keyboard
 </script>
 </body>
