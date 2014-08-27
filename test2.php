@@ -27,4 +27,11 @@
 </div>
 
 
+<script language="javascript">
+$('#myModal').modal()                      // initialized with defaults
+$('#myModal').modal({ keyboard: true })   // initialized with no keyboard
+$('#myModal').on('show.bs.modal', function (e) {
+  if (!data) return e.preventDefault() // stops modal from being shown
+})
+</script>
 </body>
