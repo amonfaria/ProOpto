@@ -5,6 +5,7 @@
             color: white;
             text-align:left;
             padding-right: 5px;
+            padding-left: 5px;
         }
 
 </style>
