@@ -1,9 +1,18 @@
-<div class="pure-button colRight">
+<style scoped>
+.button-small {
+            font-size: 85%;
+            background-color: #1f8dd6;
+            color: white;
+        }
+
+</style>
+
+<div class="colRight">
 <div>
     <div>
      <form id="view_access" action="profile-home.php" method="post">
      <input type='hidden' name='view_access' id='view_access' value='view_access'/>
-     <li><a class="white" id="view_access" href="javascript:DoViewPost()">Novo Acesso</a></li>
+     <button class="button-small pure-button">Novo Acesso</button>
      </form>
         
     </div>
