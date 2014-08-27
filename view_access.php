@@ -13,14 +13,11 @@
 <div class="colRight">
 <div>
     <div>
-     <form id="view_access" action="profile-home.php" method="post">
-     <input type='hidden' name='view_access' id='view_access' value='view_access'/>
-     <button class="button-small pure-button" data-toggle="modal" data-target="#basicModal">
+     <a href="#" class="button-small pure-button" data-toggle="modal" data-target="#basicModal">
      <i class="fa fa-plus-square fa-lg"></i>
      Novo
      
-     </button>
-     </form>
+     </a>
      
      <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
        <div class="modal-dialog">
