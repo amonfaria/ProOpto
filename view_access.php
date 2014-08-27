@@ -8,12 +8,24 @@
             padding-left: 5px;
         }
 
-.button-small-cancel {
+.button-small-red {
 
        font-size: 85%;
        background: rgb(202, 60, 60);
        
        color: white;
+
+       padding-right: 5px;
+       padding-left: 5px;
+
+
+}
+.button-small-white {
+
+       font-size: 85%;
+       background-color: white;
+       
+       color: green;
 
        padding-right: 5px;
        padding-left: 5px;
@@ -49,7 +61,7 @@
            </div>
            
            <div class="modal-footer">
-             <button type="button" class="button-small-cancel pure-button" data-dismiss="modal">
+             <button type="button" class="button-small-red pure-button" data-dismiss="modal">
              <i class="fa fa-trash fa-lg"></i>
              Cancelar
              </button>
@@ -93,8 +105,8 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button type="button" class="button-small-cancel pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-cancel pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" class="button-small-red pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
         
         
         
