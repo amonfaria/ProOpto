@@ -307,10 +307,18 @@
     <tbody>
 
 
-<tr id=<?php strval(34)?>><td> amon faria </td><td> amon faria </td><td> amon.faria@gmail.com </td><td><button onclick="hide("<?php strval(34)?>")" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr><tr id='36'><td> isaque </td><td> isaque </td><td> ifaria@gmail.com </td><td><button onclick="hide(36)" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr>
+<tr id="amon"><td> amon faria </td><td> amon faria </td><td> amon.faria@gmail.com </td><td><button onclick="hide(amon)" type="button" data-toggle="tooltip modal" data-target="verify-delete-modal" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr><tr id='36'><td> isaque </td><td> isaque </td><td> ifaria@gmail.com </td><td><button onclick="hide(36)" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr>
  
  </tbody>
 </table>
+
+<div class="modal fade verify-delete-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>
 
 <script>
 $('[data-toggle="tooltip"]').tooltip({
