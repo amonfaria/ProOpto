@@ -4,25 +4,15 @@
 ?>
 
 
-<button class="hilang">Hilang!</button>
-<div id="muncul-1">
-<td><button id="muncul-1" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> hide me<i class="fa fa-times fa-lg"></i></button> </td>
-    <td>oi </td>
-    <td>dois </td>
-    <td>tres</td>
-    <td>quatro</td>
-</div>
-<button class="bukatutup">Muncul &amp; Hilang!</button>
-<div id="target"></div>
-
-<script>
-$('#muncul-1').click(function() {
-    $('#muncul-1').hide(500);
-});
-$('.hilang').click(function() {
-    $('#target').hide(500);
-});
-$('.bukatutup').click(function() {
-    $('#target').toggle('slow');
-});
-</script>
+<div id='amon faria'><tr><td> amon faria </td><td> amon faria </td><td> amon.faria@gmail.com </td><td><button id="amon faria" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr></div><script>  
+        
+        $('#amon faria').click(function() {
+            $('#amon faria').hide(500);
+        });  </script>
+        
+        
+ <div id='isaque faria'><tr><td> amon faria </td><td> amon faria </td><td> amon.faria@gmail.com </td><td><button id="isaque faria" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr></div><script>  
+         
+         $('#amon faria').click(function() {
+             $('#amon faria').hide(500);
+         });  </script>
