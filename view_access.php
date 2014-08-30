@@ -125,7 +125,9 @@ if (count($result))
         echo "</tr>";
         
         echo "</div>";
-        echo "<script>  $('#$rejectstr').click(function() {
+        echo "<script>  
+        
+        $('#$rejectstr').click(function() {
             $('#$rejectstr').hide(500);
         });  </script>";
     } 
