@@ -97,30 +97,36 @@ if (count($result))
     </thead>
 
     <tbody>
-        
+    <div id="hideme">
 
 <?php
 
  $result = $fgmembersite->DisplayAccess();
 if (count($result)) 
 { 
+    $acceptstr = 'accept-hide1';
+    $rejectstr = 'reject-hide1';
+    
     foreach ($result AS $id => $data) 
     { 
         echo "<tr>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i> </button> </td>';
+        echo '<td><button id='.$rejectstr.' type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i> onclick="hide("'.$rejectstr.'")"</button> </td>';
         echo '<td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         
-        
+        echo $acceptstr++;
+        echo $rejectstr++;
         echo "</tr>";
     } 
 } 
 
 
 ?>
+
+    </div>
  </tbody>
 </table>
 
@@ -129,6 +135,10 @@ $('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
     placement: 'top',
 });
+
+function hide(target) {
+    document.getElementById(target).style.display = 'none';
+}
 
 </script>
 
