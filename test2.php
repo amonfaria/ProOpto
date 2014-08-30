@@ -18,17 +18,14 @@
   <body>
   <table>
   <tr id="row1">
-  <td>&nbsp;</td>
+  <td><a href="#" onclick="hideShow(row1);">Hide/Show Row 1</a></td>
   </tr>
   <tr id="row2">
-  <td>&nbsp;</td>
+  <td><a href="#" onclick="hideShow(row2);">Hide/Show Row 2</a><br /></td>
   </tr>
   <tr id="row3">
-  <td>&nbsp;</td>
+  <td><a href="#" onclick="hideShow(row3);">Hide/Show Row 3</a><br /></td>
   </tr>
   </table>
-  <a href="#" onclick="hideShow(row1);">Hide/Show Row 1</a><br />
-  <a href="#" onclick="hideShow(row2);">Hide/Show Row 2</a><br />
-  <a href="#" onclick="hideShow(row3);">Hide/Show Row 3</a><br />
   </body>
   </html>
