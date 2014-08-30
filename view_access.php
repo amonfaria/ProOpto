@@ -140,7 +140,8 @@ $('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
     placement: 'top',
 });
-
+</script>
+<script type="text/javascript">
 function hide(el_id){
   var el=document.getElementById(el_id);
   if(el_id.style.display!="none"){
