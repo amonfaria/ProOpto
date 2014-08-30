@@ -637,7 +637,7 @@ div.colMid {
     background-color: rgb(202, 60, 60);
     }
     
- .green + .tooltip > .tooltip-inner, .red-tooltip + .tooltip > .tooltip-arrow {
+ .green + .tooltip > .tooltip-inner, .green-tooltip + .tooltip > .tooltip-arrow {
         background-color: green;
     }
 
