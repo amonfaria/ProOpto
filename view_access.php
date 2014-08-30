@@ -109,7 +109,7 @@ if (count($result))
     
     foreach ($result AS $id => $data) 
     { 
-        echo "<div id='.$rejectstr.'>";
+        echo "<div id='$rejectstr'>";
         echo "<tr>";
         
         echo "<td> $data[name] </td>";
