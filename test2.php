@@ -1,8 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
   <html>
-  <head>
-  <title>Untitled</title>
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
   <style type="text/css">
   td{border:3px solid red;}
   </style>
@@ -16,7 +14,7 @@
     }
   }
   </script>
-  </head>
+
   <body>
   <table>
   <tr id="row1">
