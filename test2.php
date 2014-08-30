@@ -4,16 +4,7 @@
   <style type="text/css">
   td{border:3px solid red;}
   </style>
-  <script type="text/javascript">
-  function hideShow(el_id){
-    var el=document.getElementById(el_id);
-    if(el_id.style.display!="none"){
-      el_id.style.display="none";
-    }else{
-      el_id.style.display="";
-    }
-  }
-  </script>
+
 
   <body>
 <table class="pure-table pure-table-horizontal">
@@ -38,4 +29,15 @@
  </tbody>
 </table>
   </body>
+  
+  <script type="text/javascript">
+  function hideShow(el_id){
+    var el=document.getElementById(el_id);
+    if(el_id.style.display!="none"){
+      el_id.style.display="none";
+    }else{
+      el_id.style.display="";
+    }
+  }
+  </script>
   </html>
