@@ -5,13 +5,14 @@
 
 
 
-  <!-- HTML to write -->
-  <a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
-  
-  <!-- Generated markup by the plugin -->
-  <div class="tooltip bottom" role="tooltip">
-    <div class="tooltip-arrow"></div>
-    <div class="tooltip-inner">
-      Some tooltip text!
-    </div>
- </div>
+<a data-toggle="tooltip" title="add to cart">
+    <i class="icon-shopping-cart"></i>
+</a>
+
+<script>
+$('a[data-toggle="tooltip"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+});
+
+</script>
