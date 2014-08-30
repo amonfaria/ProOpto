@@ -120,8 +120,8 @@ if (count($result))
         echo "</div>";
         
         
-        echo $acceptstr++;
-        echo $rejectstr++;
+        $acceptstr++;
+        $rejectstr++;
         echo "</tr>";
     } 
 } 
