@@ -319,7 +319,7 @@
     </div>
   </div>
 </div>
-<a href="#" data-confirm="Are you sure you want to delete?">Delete</a>
+<a href="#" data-toggle="tooltip" title="Aprovar Acesso" data-confirm="Are you sure you want to delete?">Delete</a>
 
 <script>
 $('[data-toggle="tooltip"]').tooltip({
