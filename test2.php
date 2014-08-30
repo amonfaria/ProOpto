@@ -21,9 +21,7 @@
 
       <ul class="nav navbar-nav navbar-right">
       <div class="Mobile is-center pure-menu visible-xs-block">
-      <?php
-      GetMenu($fgmembersite->UserClass())
-      ?>
+
       </div>
 
         <li class="dropdown">
