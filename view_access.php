@@ -110,12 +110,12 @@ if (count($result))
     foreach ($result AS $id => $data) 
     { 
 
-        echo "<tr id='$data[email]'>";
+        echo "<tr id='$data[id_user]'>";
         
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button id="'."$data[email]".'" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td>';
+        echo '<td><button onclick="hide('."$data[id_user]".')" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td>';
         echo '<td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         echo '';
@@ -124,11 +124,7 @@ if (count($result))
         $rejectstr++;
         echo "</tr>";
         
-        echo "<script>  
-        
-        $('#$data[email]').click(function() {
-            $('#$data[email]').hide(500);
-        });  </script>";
+
     } 
 } 
 
@@ -145,8 +141,13 @@ $('[data-toggle="tooltip"]').tooltip({
     placement: 'top',
 });
 
-function hide(target) {
-    document.getElementById(target).style.display = 'none';
+function hide(el_id){
+  var el=document.getElementById(el_id);
+  if(el_id.style.display!="none"){
+    el_id.style.display="none";
+  }else{
+    el_id.style.display="";
+  }
 }
 
 </script>
