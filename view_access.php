@@ -109,11 +109,11 @@ if (count($result))
     
     foreach ($result AS $id => $data) 
     { 
-        echo "<tr>";
+        echo "<tr id='.$rejectstr.'>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button id='.$rejectstr.' type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i> onclick="hide("'.$rejectstr.'")"</button> </td>';
+        echo '<td><button onclick="hide("'.$rejectstr.'")type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i>"</button> </td>';
         echo '<td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         
