@@ -636,19 +636,8 @@ div.colMid {
 
 
 
-.red-tooltip .tooltip.top .tooltip-inner {
-    background-color: rgb(202, 60, 60);
-}
-.red-tooltip .tooltip.top .tooltip-arrow {
-      background-color: rgb(202, 60, 60);
-}
-
-.green-tooltip .tooltip.top .tooltip-inner {
-    background-color: green;
-}
-.green-tooltip .tooltip.top .tooltip-arrow {
-      background-color: green;
-}
+.red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
+.red-tooltip + .tooltip > .tooltip-arrow {border-bottom-color: #f00;}
 
 
 
