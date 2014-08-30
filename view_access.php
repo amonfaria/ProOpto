@@ -109,8 +109,9 @@ if (count($result))
     
     foreach ($result AS $id => $data) 
     { 
-        echo "<div id='.$rejectstr.'>";
+        
         echo "<tr>";
+        echo "<div id='.$rejectstr.'>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
