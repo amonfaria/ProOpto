@@ -3,8 +3,9 @@
 
 ?>
 
-    <thead>
 
+<table class="pure-table pure-table-horizontal">
+    <thead>
         <tr>
             <label>Esperando Confirmação</label>
             <th></th>
@@ -34,3 +35,4 @@
         });  </script>
  
  </tbody>
+</table>
