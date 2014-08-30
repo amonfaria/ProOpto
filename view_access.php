@@ -84,26 +84,25 @@ if (count($result))
  </tbody>
 </table>
 
-<table class="pure-table pure-table-horizontal">
-    <thead>
-        <tr>
-            <label>Esperando Confirmação</label>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-
-    <tbody>
-
 
 <?php
 
  $result = $fgmembersite->DisplayAccess();
 if (count($result)) 
 { 
+    echo " <table class='pure-table pure-table-horizontal'>
+        <thead>
+            <tr>
+                <label>Esperando Confirmação</label>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+    
+        <tbody>";
 
     
     foreach ($result AS $id => $data) 
