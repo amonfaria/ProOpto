@@ -127,7 +127,7 @@ if (count($result))
 <script>
 $('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
-    placement: 'bottom',
+    placement: 'top',
 });
 
 </script>
