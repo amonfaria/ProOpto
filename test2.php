@@ -32,7 +32,7 @@
 </table>
   </body>
   
-  <script type="text/javascript">
+  <script>
   function hideShow(el_id){
     var el=document.getElementById(el_id);
     if(el_id.style.display!="none"){
