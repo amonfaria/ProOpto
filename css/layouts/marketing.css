@@ -562,6 +562,12 @@ div.colMid {
 	border-color: gray;
 }
 
+.btn .btn-default .dropdown-toggle{
+	font-size: 100%;
+	border-top: 4px solid #ff7300;
+	background-color: white;
+}
+
 .button-small {
             font-size: 85%;
             background-color: #ff7300;
