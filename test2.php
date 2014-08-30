@@ -315,7 +315,7 @@
 <div class="modal fade verify-delete-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      ...
+      delete me?
     </div>
   </div>
 </div>
