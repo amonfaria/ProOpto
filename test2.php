@@ -10,7 +10,7 @@
 </a>
 
 <script>
-$('a[data-toggle="tooltip"]').tooltip({
+$('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
     placement: 'bottom',
 });
