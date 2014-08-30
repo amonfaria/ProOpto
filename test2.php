@@ -4,7 +4,7 @@
 ?>
 
 <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+  <button class="Mobile btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
     Dropdown
     <span class="caret"></span>
   </button>
