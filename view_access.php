@@ -2,7 +2,7 @@
 <div class="colRight">
 <div>
     <div>
-     <button href="#" class="button-small pure-button" data-toggle="modal tooltip" data-target="#basicModal">
+     <button href="#" class="button-small pure-button" data-toggle="modal" data-target="#basicModal">
      <i class="fa fa-plus-square fa-lg"></i>
      Novo
      
