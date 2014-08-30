@@ -633,13 +633,23 @@ div.colMid {
 
 }
 
-.red-tooltip + .tooltip > .tooltip-inner, .red-tooltip + .tooltip > .tooltip-arrow {
+
+
+
+.red-tooltip .tooltip.top .tooltip-inner {
     background-color: rgb(202, 60, 60);
-    }
-    
- .green + .tooltip > .tooltip-inner, .green-tooltip + .tooltip > .tooltip-arrow {
-        background-color: green;
-    }
+}
+.red-tooltip .tooltip.top .tooltip-arrow {
+      background-color: rgb(202, 60, 60);
+}
+
+.green-tooltip .tooltip.top .tooltip-inner {
+    background-color: green;
+}
+.green-tooltip .tooltip.top .tooltip-arrow {
+      background-color: green;
+}
+
 
 
 
