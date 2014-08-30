@@ -5,7 +5,7 @@
 
 
 
-<a data-toggle="tooltip" title="add to cart">
+<a data-toggle="tooltip" title="add to">
     <i class="icon-shopping-cart">Shopping</i>
 </a>
 
