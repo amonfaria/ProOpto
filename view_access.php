@@ -97,7 +97,7 @@ if (count($result))
     </thead>
 
     <tbody>
-    <div id="hideme">
+
 
 <?php
 
@@ -136,7 +136,7 @@ if (count($result))
 
 ?>
 
-    </div>
+ 
  </tbody>
 </table>
 
