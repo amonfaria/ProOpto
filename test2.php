@@ -1,38 +1,36 @@
-<?php
-   include("main-header.php");
-
-?>
-
-
-<table class="pure-table pure-table-horizontal">
-    <thead>
-        <tr>
-            <label>Esperando Confirmação</label>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead>
-
-    <tbody>
-
-
-<div id='amon'><tr><td> amon faria </td><td> amon faria </td><td> amon.faria@gmail.com </td><td><button id="amon" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr></div><script>  
-        
-        $('#amon').click(function() {
-            $('#amon').hide(500);
-        });  
-        </script>
-        
-        
-        
-  <div id='ifaria@gmail.com'><tr><td> isaque </td><td> isaque </td><td> ifaria@gmail.com </td><td><button id="ifaria@gmail.com" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr></div><script>  
-        
-        $('#ifaria@gmail.com').click(function() {
-            $('#ifaria@gmail.com').hide(500);
-        });  </script>
- 
- </tbody>
-</table>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+  <html>
+  <head>
+  <title>Untitled</title>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <style type="text/css">
+  td{border:3px solid red;}
+  </style>
+  <script type="text/javascript">
+  function hideShow(el_id){
+    var el=document.getElementById(el_id);
+    if(el_id.style.display!="none"){
+      el_id.style.display="none";
+    }else{
+      el_id.style.display="";
+    }
+  }
+  </script>
+  </head>
+  <body>
+  <table>
+  <tr id="row1">
+  <td>&nbsp;</td>
+  </tr>
+  <tr id="row2">
+  <td>&nbsp;</td>
+  </tr>
+  <tr id="row3">
+  <td>&nbsp;</td>
+  </tr>
+  </table>
+  <a href="#" onclick="hideShow(row1);">Hide/Show Row 1</a><br />
+  <a href="#" onclick="hideShow(row2);">Hide/Show Row 2</a><br />
+  <a href="#" onclick="hideShow(row3);">Hide/Show Row 3</a><br />
+  </body>
+  </html>
