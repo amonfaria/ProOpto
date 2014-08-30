@@ -70,8 +70,8 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button type="button" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" data-toggle="tooltip" title="Editar" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" data-toggle="tooltip" title="Deletar Usuario" class="button-small-red-inverse pure-button"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
         
         
         
@@ -110,8 +110,8 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button type="button" class="button-small-red-inverse pure-button"> <i class="fa fa-times fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" class="button-small-green-inverse pure-button"> <i class="fa fa-check fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button"> <i class="fa fa-times fa-lg"></i> </button> </td>';
+        echo '<td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         
         
@@ -123,5 +123,13 @@ if (count($result))
 ?>
  </tbody>
 </table>
+
+<script>
+$('[data-toggle="tooltip"]').tooltip({
+    animated: 'fade',
+    placement: 'bottom',
+});
+
+</script>
 
 </div>
