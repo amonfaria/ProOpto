@@ -16,16 +16,26 @@
   </script>
 
   <body>
-  <table>
-  <tr id="row1">
-  <td><a href="#" onclick="hideShow(row1);">Hide/Show Row 1</a></td>
-  </tr>
-  <tr id="row2">
-  <td><a href="#" onclick="hideShow(row2);">Hide/Show Row 2</a><br /></td>
-  </tr>
-  <tr id="row3">
-  <td><a href="#" onclick="hideShow(row3);">Hide/Show Row 3</a><br /></td>
-  </tr>
-  </table>
+<table class="pure-table pure-table-horizontal">
+    <thead>
+        <tr>
+            <label>Esperando Confirmação</label>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+
+<tr id='amon.faria@gmail.com'><td> amon faria </td><td> amon faria </td><td> amon.faria@gmail.com </td><td><button onclick='hideShow(amon.faria@gmail.com)' type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr>
+
+ 
+<tr id='ifaria@gmail.com'><td> isaque </td><td> isaque </td><td> ifaria@gmail.com </td><td><button id="ifaria@gmail.com" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td><td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td></tr> 
+ </tbody>
+</table>
   </body>
   </html>
