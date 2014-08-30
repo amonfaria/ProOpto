@@ -104,8 +104,7 @@ if (count($result))
  $result = $fgmembersite->DisplayAccess();
 if (count($result)) 
 { 
-    $acceptstr = 'accept-hide1';
-    $rejectstr = 'reject-hide1';
+
     
     foreach ($result AS $id => $data) 
     { 
@@ -116,12 +115,10 @@ if (count($result))
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
         echo '<td><button onclick="hide('."$data[username]".')" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td>';
-        echo '<td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
+        echo '<td><button onclick="hide('."$data[username]".')" type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         echo '';
-        
-        $acceptstr++;
-        $rejectstr++;
+
         echo "</tr>";
         
 
@@ -140,8 +137,7 @@ $('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
     placement: 'top',
 });
-</script>
-<script type="text/javascript">
+
 function hide(el_id){
   var el=document.getElementById(el_id);
   if(el_id.style.display!="none"){
