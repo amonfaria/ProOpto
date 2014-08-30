@@ -109,8 +109,8 @@ if (count($result))
     
     foreach ($result AS $id => $data) 
     { 
-        echo "<div id='$data[email]'>";
-        echo "<tr>";
+
+        echo "<tr id='$data[email]'>";
         
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
@@ -124,7 +124,6 @@ if (count($result))
         $rejectstr++;
         echo "</tr>";
         
-        echo "</div>";
         echo "<script>  
         
         $('#$data[email]').click(function() {
