@@ -33,7 +33,7 @@
   </body>
   
   <script>
-  function hideShow(el_id){
+  function hide(el_id){
     var el=document.getElementById(el_id);
     if(el_id.style.display!="none"){
       el_id.style.display="none";
