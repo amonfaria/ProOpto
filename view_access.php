@@ -110,12 +110,12 @@ if (count($result))
     foreach ($result AS $id => $data) 
     { 
 
-        echo "<tr id='$data[id_user]'>";
+        echo "<tr id='$data[username]'>";
         
         echo "<td> $data[name] </td>";
         echo "<td> $data[name] </td>";
         echo "<td> $data[email] </td>";
-        echo '<td><button onclick="hide('."$data[id_user]".')" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td>';
+        echo '<td><button onclick="hide('."$data[username]".')" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td>';
         echo '<td><button type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         echo '';
