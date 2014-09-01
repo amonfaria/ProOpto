@@ -321,6 +321,51 @@
 </div>
 <button href="#" data-toggle="tooltip" title="Aprovar Acesso" data-confirm="Certeza que quer excluir?">Delete</button>
 
+
+
+<div>
+ <button href="#" rel="tooltip" title=" Novo usuario" class="button-small pure-button" data-toggle="modal" data-target="#basicModal">
+ <i class="fa fa-plus-square fa-lg"></i>
+ Novo
+ 
+ </button>
+ 
+ 
+ <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+         <h4 class="modal-title" id="myModalLabel">Registrar Usuario Novo</h4>
+       </div>
+       <div class="modal-body">
+         <form id="myform" method="get" action="something.php">
+             ADD REGISTRATION FIELDS HERE
+             <input type="text" name="name" />
+        
+         </form>
+       </div>
+       
+       <div class="modal-footer">
+         <button type="button" class="button-small-red pure-button" data-dismiss="modal">
+         <i class="fa fa-trash fa-lg"></i>
+         Cancelar
+         </button>
+         <button type="submit" form="myform" class="button-small pure-button">
+         <i class="fa fa-check-square fa-lg"></i>
+         Registrar
+         </button>
+       </div>
+     </div>
+   </div>
+ </div>
+    
+</div>
+
+</div>
+
+
+
 <script>
 $('[data-toggle="tooltip"]').tooltip({
     animated: 'fade',
