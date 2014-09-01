@@ -342,7 +342,7 @@ $(document).ready(function() {
 	$('a[data-confirm]').click(function(ev) {
 		var href = $(this).attr('href');
 		if (!$('#dataConfirmModal').length) {
-			$('body').append('<div id="dataConfirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dataConfirmLabel" aria-hidden="true"><div class="modal-dialog modal-sm"><div class="modal-content">Certeza que quer excluir?<br><button class="button-small-red pure-button pure-button-primary" data-dismiss="modal" aria-hidden="true">Cancelar</button><button class="button-small-red pure-button pure-button-primary" id="dataConfirmOK">Confirmar</button></div></div>');
+			$('body').append('<div id="dataConfirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dataConfirmLabel" aria-hidden="true"><div class="modal-dialog modal-sm"><div class="modal-content">Certeza que quer excluir?<br><button class="button-small-red pure-button pure-button-primary" data-dismiss="modal" aria-hidden="true">Nao</button><button class="button-small-green pure-button pure-button-primary" id="dataConfirmOK">Sim</button></div></div>');
 		} 
 		$('#dataConfirmModal').find('.modal-body').text($(this).attr('data-confirm'));
 		$('#dataConfirmOK').attr('href', href);
