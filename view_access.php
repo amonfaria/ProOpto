@@ -1,3 +1,6 @@
+<?php
+    require_once("delete_confirm.php");
+?>
 
 <div class="colRight">
 <div>
