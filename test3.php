@@ -1,5 +1,5 @@
 <?php 
-  echo $_POST['name'];
+  echo $_POST['value'];
   
   $myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
   $txt = $_POST['name'];
