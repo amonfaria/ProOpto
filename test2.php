@@ -319,7 +319,7 @@
     </div>
   </div>
 </div>
-<a href="#" data-toggle="tooltip" title="Aprovar Acesso" data-confirm="Certeza que quer excluir?">Delete</a>
+<button href="#" data-toggle="tooltip" title="Aprovar Acesso" data-confirm="Certeza que quer excluir?">Delete</button>
 
 <script>
 $('[data-toggle="tooltip"]').tooltip({
@@ -339,7 +339,7 @@ function hide(el_id){
 
 
 $(document).ready(function() {
-	$('a[data-confirm]').click(function(ev) {
+	$('[data-confirm]').click(function(ev) {
 		var href = $(this).attr('href');
 		if (!$('#dataConfirmModal').length) {
 			$('body').append('<div id="dataConfirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dataConfirmLabel" aria-hidden="true"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel">Excluir?</h4></div><div class="modal-body">Certeza que quer excluir?</div><div class="modal-footer"><button class="button-small-green pure-button" data-dismiss="modal" type="button" aria-hidden="true">Cancelar</button><button type="submit" class="button-small-red pure-button " id="dataConfirmOK">Excluir</button></div></div>');
