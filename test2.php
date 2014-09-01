@@ -7,8 +7,11 @@ alert(str);
 </script>
 <body>
 <form name="f1">
-<input type="text" name="txt" size=20>
-<input type="radio" name="r1" value="radio1" onClick="fun(this.value)">
+
+<button type="button" name="submit" value="test1" onClick="fun(this.value)">
+</form>
+<form name="f1">
+<button type="button" name="submit" value="test2" onClick="fun(this.value)">
 </form>
 </body>
 </html>
