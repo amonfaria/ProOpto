@@ -67,11 +67,11 @@ if (count($result))
     foreach ($result AS $id => $data) 
     { 
         echo "<tr>";
-        echo "<td> $data[name] </td>";
-        echo "<td> $data[name] </td>";
-        echo "<td> $data[email] </td>";
-        echo '<td><button type="button" data-toggle="tooltip" title="Editar" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td><button type="button" data-toggle="tooltip" title="Deletar Usuario" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        echo "<td class='medsize'> $data[name] </td>";
+        echo "<td class='medsize'> $data[name] </td>";
+        echo "<td class='medsize'> $data[email] </td>";
+        echo '<td class="medsize"><button type="button" data-toggle="tooltip" title="Editar" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
+        echo '<td class="medsize"><button type="button" data-toggle="tooltip" title="Deletar Usuario" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
         
         
         
@@ -110,11 +110,11 @@ if (count($result))
 
         echo "<tr id='$data[username]'>";
         
-        echo "<td> $data[name] </td>";
-        echo "<td> $data[name] </td>";
-        echo "<td> $data[email] </td>";
-        echo '<td><button onclick="hide('."$data[username]".')" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td>';
-        echo '<td><button onclick="hide('."$data[username]".')" type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
+        echo "<td class='medsize'> $data[name] </td>";
+        echo "<td class='medsize'> $data[name] </td>";
+        echo "<td class='medsize'> $data[email] </td>";
+        echo '<td class="medsize"><button onclick="hide('."$data[username]".')" type="button" data-toggle="tooltip" title="Negar Acesso" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-times fa-lg"></i></button> </td>';
+        echo '<td class="medsize"><button onclick="hide('."$data[username]".')" type="button" data-toggle="tooltip" title="Aprovar Acesso" class="button-small-green-inverse pure-button green-tooltip"> <i class="fa fa-check fa-lg"></i> </button> </td>';
         
         echo '';
 
