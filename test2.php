@@ -1,3 +1,6 @@
+<?php
+    include("main-header.php");
+?>
 <html>
 <script language="javascript">
 function fun(str)
