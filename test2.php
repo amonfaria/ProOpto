@@ -2,7 +2,14 @@
 <script language="javascript">
 function fun(str)
 {
-alert(str);
+
+    $.ajax ({
+        url: "test3.php",
+        data: { action : str }, //optional
+        success: function( result ) {
+            //do something after you receive the result
+        }
+
 }
 </script>
 <body>
