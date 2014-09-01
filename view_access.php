@@ -71,7 +71,7 @@ if (count($result))
         echo "<td class='medsize'> $data[name] </td>";
         echo "<td class='medsize'> $data[email] </td>";
         echo '<td class="medsize"><button type="button" data-toggle="tooltip" title="Editar" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td class="medsize"><button type="button" data-toggle="tooltip" title="Deletar Usuario" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        echo '<td class="medsize"><button type="button" data-toggle="tooltip" title="Deletar Usuario" data-confirm="Certeza que quer excluir?" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
         
         
         
@@ -145,6 +145,19 @@ function hide(el_id){
     el_id.style.display="";
   }
 }
+
+$(document).ready(function() {
+	$('[data-confirm]').click(function(ev) {
+		var href = $(this).attr('href');
+		if (!$('#dataConfirmModal').length) {
+			$('body').append('<div id="dataConfirmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dataConfirmLabel" aria-hidden="true"><div class="modal-dialog modal-sm"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel">Excluir?</h4></div><div class="modal-body">Certeza que quer excluir?</div><div class="modal-footer"><button class="button-small-green pure-button" data-dismiss="modal" type="button" aria-hidden="true">Cancelar</button><button type="submit" class="button-small-red pure-button " id="dataConfirmOK">Excluir</button></div></div>');
+		} 
+		$('#dataConfirmModal').find('.modal-body').text($(this).attr('data-confirm'));
+		$('#dataConfirmOK').attr('href', href);
+		$('#dataConfirmModal').modal({show:true});
+		return false;
+	});
+});
 
 </script>
 
