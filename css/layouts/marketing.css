@@ -633,6 +633,10 @@ div.colMid {
 
 }
 
+td { 
+    min-width: 100px; 
+}
+
 
 
 
