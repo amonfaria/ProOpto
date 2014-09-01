@@ -71,7 +71,7 @@ if (count($result))
         echo "<td class='medsize'> $data[name] </td>";
         echo "<td class='medsize'> $data[email] </td>";
         echo '<td class="medsize"><button type="button" rel="tooltip" title="Editar" class="button-small-white pure-button"> <i class="fa fa-pencil fa-lg"></i> </button> </td>';
-        echo '<td class="medsize"><button type="button" rel="tooltip" title="Deletar Usuario" data-confirm="Certeza que quer excluir?" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-trash fa-lg"></i> </button> </td>';
+        echo '<td class="medsize"><form method="POST" action="profile-home.php" accept-charset="UTF-8"><input type="hidden" name="user_delete" id="user_delete" value="'."$data[username]".'"/><button type="button" rel="tooltip" title="Deletar Usuario" data-toggle="modal" data-target="#confirmDelete" data-title="Excluir Usuario" data-message="Tem certeza que quer excluir usuario? ?" class="button-small-red-inverse pure-button red-tooltip"> <i class="fa fa-trash fa-lg"></i> </button></form> </td>';
         
         
         
