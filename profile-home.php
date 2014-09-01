@@ -58,6 +58,13 @@ if(isset($_POST['view_access']))
     
    
 }
+if(isset($_POST['user_delete']))
+{
+    
+    echo $_POST['user_delete'];
+    
+   
+}
 
 if(isset($_POST['view_calendar']))
 {
