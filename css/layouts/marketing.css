@@ -633,8 +633,8 @@ div.colMid {
 
 }
 
-tr { 
-    min-width: 150px; 
+td { 
+    width: 150px;
 }
 
 
