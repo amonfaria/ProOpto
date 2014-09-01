@@ -346,7 +346,7 @@ $(document).ready(function() {
 			  <div class="modal-header">
 			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			    </div>
-			<div class="modal-body">Certeza que quer excluir?</div><br><div class="modal-footer"><button class="button-small-red pure-button pure-button-primary" data-dismiss="modal" aria-hidden="true">Nao</button><button class="button-small-green pure-button pure-button-primary" id="dataConfirmOK">Sim</button></div></div></div>');
+			<div class="modal-body">Certeza que quer excluir?</div><br><div class="modal-footer"><button class="button-small-red pure-button pure-button-primary" data-dismiss="modal" aria-hidden="true">Nao</button><button class="button-small-green pure-button pure-button-primary" id="dataConfirmOK">Sim</button></div></div>');
 		} 
 		$('#dataConfirmModal').find('.modal-body').text($(this).attr('data-confirm'));
 		$('#dataConfirmOK').attr('href', href);
