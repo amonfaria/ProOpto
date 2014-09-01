@@ -160,7 +160,7 @@
 
 
 
-<form action ="profile-home.php" method="POST">
+<form action ="#" method="POST">
 <button class='btn btn-danger btn-xs' type="submit" name="remove_levels" value="delete"><span class="fa fa-times"></span> delete</button>
 </form>
 
