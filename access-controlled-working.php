@@ -14,6 +14,10 @@ if(!$fgmembersite->CheckLogin())
       <title>An Access Controlled Page</title>
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css">
 </head>
+
+
+
+    ###TEST###
 <body>
 <div id='fg_membersite_content'>
 <h2>This is an Access Controlled Page</h2>
